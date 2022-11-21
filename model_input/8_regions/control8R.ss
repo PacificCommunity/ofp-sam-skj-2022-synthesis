@@ -92,6 +92,7 @@
 # setup for M, growth, maturity, fecundity, recruitment distibution, movement
 #
 0 #_natM_type:_0=1Parm; 1=N_breakpoints;_2=Lorenzen;_3=agespecific;_4=agespec_withseasinterpolate;_5=Maunder_M;_6=Age-range_Lorenzen
+#0.6729  0.6729  0.5948  0.4446  0.3165  0.2414  0.2118  0.2095  0.2264  0.2593  0.3062  0.3637  0.4246  0.4764  0.5126  0.5328  0.5388  #_1
 #_no additional input for selected M option; read 1P per morph
 1 # GrowthModel: 1=vonBert with L1&L2; 2=Richards with L1&L2; 3=age_specific_K_incr; 4=age_specific_K_decr;5=age_specific_K_each; 6=NA; 7=NA; 8=growth cessation
 2 #_Age(post-settlement)_for_L1;linear growth below this
@@ -112,7 +113,7 @@
 #
 #_growth_parms
 #_LO	HI	INIT	PRIOR	PR_SD	PR_type	PHASE	env_var&link	dev_link	dev_minyr	dev_maxyr	dev_PH	Block	Block_Fxn
-0.001	       2	        0.2	        0.2	0.4	0	  2	0	0	0	0	  0	0	0	#_NatM_p_1_Fem_GP_1                 
+0.001	       2	        0.2	        0.2	0.4	3	  2	0	0	0	0	  0	0	0	#_NatM_p_1_Fem_GP_1                 
    10	      30	    18.2815	    22.7832	 10	0	  2	0	0	0	0	0.5	0	0	#_L_at_Amin_Fem_GP_1                
    70	     130	         90	    83.8827	 10	0	  3	0	0	0	0	0.5	0	0	#_L_at_Amax_Fem_GP_1                
  0.05	     0.4	        0.2	     0.2147	0.8	0	  3	0	0	0	0	0.5	0	0	#_VonBert_K_Fem_GP_1                
@@ -124,7 +125,7 @@
   -10	    1000	         -9	         -9	0.8	0	 -3	0	0	0	0	0.5	0	0	#_Mat_slope_Fem_GP_1                
    -3	       3	          1	          1	0.8	0	 -3	0	0	0	0	0.5	0	0	#_Eggs_alpha_Fem_GP_1               
    -3	       3	          0	          0	0.8	0	 -3	0	0	0	0	0.5	0	0	#_Eggs_beta_Fem_GP_1                
-  -10	       4	  -0.708427	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_RecrDist_GP_1_area_1_month_1      
+  -20	       4	  -0.708427	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_RecrDist_GP_1_area_1_month_1      
   -10	       4	         -4	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_RecrDist_GP_1_area_2_month_1      
   -10	       4	    1.57544	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_RecrDist_GP_1_area_3_month_1      
   -10	       4	   -1.80046	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_RecrDist_GP_1_area_4_month_1      
@@ -133,118 +134,118 @@
   -10	       6	          4	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_RecrDist_GP_1_area_7_month_1      
   -10	       4	    1.28968	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_RecrDist_GP_1_area_8_month_1      
   0.1	      10	          1	          1	  1	0	 -1	0	0	0	0	0.5	0	0	#_CohortGrowDev                     
-  -10	       4	         -4	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_2
-   -4	      10	          4	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_2
-  -10	       4	         -4	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_3
-  0.1	      10	          1	          1	  1	0	 -1	0	0	0	0	  0	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_3
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_4
-  -10	       6	   -5.99999	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_4
-   -6	       6	    5.21623	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_5
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_5
-   -6	       6	   -1.15672	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_6
-   -6	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_6
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_7
-  -10	       6	   -5.99998	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_7
-   -6	       6	  -0.972421	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_8
-   -6	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_8
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_1
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_1
-  -10	       6	   -5.99999	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_3
-  -10	       6	   -5.99999	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_3
-   -6	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_4
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_4
-   -6	       6	    4.36094	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_5
-   -6	       6	   -4.32279	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_5
-   -6	       6	    2.97661	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_6
-   -6	       6	    5.30547	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_6
-   -8	       6	   -5.99999	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_7
-   -8	       6	   -5.99999	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_7
-   -8	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_8
-   -6	       8	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_8
-   -6	       6	    4.22989	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_1
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_1
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_2
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_2
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_4
-   -6	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_4
-   -6	       6	    4.38411	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_5
-   -6	       6	    1.47995	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_5
-   -6	       6	    2.20348	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_6
-   -6	       6	    1.66004	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_6
-   -6	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_7
-   -6	       6	    -4.5386	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_7
-   -6	       6	    2.50434	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_8
-   -6	       6	   -5.33198	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_8
-   -6	       6	    5.27234	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_1
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_1
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_2
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_2
-  -10	       6	   -5.99963	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_3
-  -10	       6	   -5.99997	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_3
-   -6	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_5
-   -6	       6	   -0.58062	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_5
-   -6	       6	    5.62075	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_6
-   -6	       6	     1.9612	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_6
-  -10	       6	   -5.99995	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_7
-  -10	       6	   -5.99999	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_7
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_8
-   -6	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_8
-  -10	       6	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_1
-   -6	       6	   -2.44799	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_1
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_2
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_2
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_3
-   -6	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_3
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_4
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_4
-   -6	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_6
-   -6	       6	  -0.502631	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_6
-   -6	       6	    1.54875	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_7
-   -6	       6	    1.86899	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_7
-  -10	       6	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_8
-  -10	       6	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_8
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_1
-  -10	       6	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_1
-  -10	       6	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_2
-  -10	       6	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_2
-  -10	      10	    2.87797	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_3
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_3
-  -10	      10	   -5.05934	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_4
-  -10	      10	  -0.536341	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_4
-  -10	      10	   -3.97619	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_5
-  -10	      10	    5.42784	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_5
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_7
-  -10	      10	    4.60496	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_7
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_8
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_8
-  -10	      10	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_1
-  -10	      10	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_1
-  -10	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_2
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_2
-  -10	      10	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_3
-  -10	      10	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_3
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_4
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_4
-  -10	      10	   -3.88483	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_5
-  -10	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_5
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_6
-  -10	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_6
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_8
-  -10	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_8
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_1
-  -10	      10	   0.628976	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_1
-  -10	      10	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_2
-  -10	      10	    1.74598	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_2
-  -10	      10	   -5.14601	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_3
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_3
-  -10	      10	   -5.99999	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_4
-  -10	      10	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_4
-  -10	      10	  -0.509168	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_5
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_5
-  -10	      10	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_6
-  -10	      10	    1.50992	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_6
-  -10	      10	   -5.99992	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_7
-  -10	      10	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_7
+  -20	     20	         -4	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_2
+  -20	     20	          4	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_2
+  -20	     20	         -4	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_3
+  -20	     20	          1	          1	  1	0	 -1	0	0	0	0	  0	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_3
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_4
+  -20	     20	   -5.99999	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_4
+  -20	     20	    5.21623	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_5
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_5
+  -20	     20	   -1.15672	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_6
+  -20	     30	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_6
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_7
+  -20	     20	   -5.99998	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_7
+  -20	     20	  -0.972421	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_1_to_8
+  -30	     20	        -19	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_1_to_8
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_1
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_1
+  -20	     20	   -5.99999	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_3
+  -20	     20	   -5.99999	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_3
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_4
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_4
+  -20	     20	    4.36094	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_5
+  -20	     20	   -4.32279	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_5
+  -20	     20	    2.97661	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_6
+  -20	     20	    5.30547	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_6
+  -20	     20	   -5.99999	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_7
+  -20	     20	   -5.99999	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_7
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_2_to_8
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_2_to_8
+  -20	     20	    4.22989	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_1
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_1
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_2
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_2
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_4
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_4
+  -20	     20	    4.38411	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_5
+  -20	     20	    1.47995	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_5
+  -30	     20	    2.20348	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_6
+  -20	     30	    1.66004	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_6
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_7
+  -20	     20	    -4.5386	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_7
+  -20	     20	    2.50434	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_3_to_8
+  -20	     20	   -5.33198	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_3_to_8
+  -20	     20	    5.27234	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_1
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_1
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_2
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_2
+  -20	     20	   -5.99963	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_3
+  -20	     20	   -5.99997	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_3
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_5
+  -20	     20	   -0.58062	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_5
+  -20	     20	    5.62075	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_6
+  -20	     20	     1.9612	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_6
+  -20	     20	   -5.99995	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_7
+  -20	     20	   -5.99999	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_7
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_4_to_8
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_4_to_8
+  -20	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_1
+  -20	     20	   -2.44799	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_1
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_2
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_2
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_3
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_3
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_4
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_4
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_6
+  -20	     20	  -0.502631	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_6
+  -20	     20	    1.54875	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_7
+  -20	     20	    1.86899	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_7
+  -20	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_5_to_8
+  -20	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_5_to_8
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_1
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_1
+  -20	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_2
+  -20	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_2
+  -20	     20	    2.87797	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_3
+  -30	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_3
+  -20	     20	   -5.05934	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_4
+  -20	     20	  -0.536341	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_4
+  -20	     20	   -3.97619	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_5
+  -20	     30	    5.42784	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_5
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_7
+  -20	     20	    4.60496	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_7
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_6_to_8
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_6_to_8
+  -20	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_1
+  -20	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_1
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_2
+  -30	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_2
+  -30	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_3
+  -20	     30	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_3
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_4
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_4
+  -20	     20	   -3.88483	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_5
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_5
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_6
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_6
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_7_to_8
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_7_to_8
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_1
+  -20	     20	   0.628976	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_1
+  -20	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_2
+  -20	     20	    1.74598	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_2
+  -20	     20	   -5.14601	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_3
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_3
+  -20	     30	   -5.99999	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_4
+  -30	     20	         -6	          0	 99	0	  1	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_4
+  -20	     20	  -0.509168	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_5
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_5
+  -20	     20	          6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_6
+  -20	     20	    1.50992	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_6
+  -20	     20	   -5.99992	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_A_seas_1_GP_1_from_8_to_7
+  -20	     20	         -6	          0	 99	0	  3	0	0	0	0	0.5	0	0	#_MoveParm_B_seas_1_GP_1_from_8_to_7
 1e-06	0.999999	        0.5	        0.5	0.5	0	-99	0	0	0	0	  0	0	0	#_FracFemale_GP_1                   
 #_no timevary MG parameters
 #
@@ -259,7 +260,7 @@
 #_LO	HI	INIT	PRIOR	PR_SD	PR_type	PHASE	env-var	use_dev	dev_mnyr	dev_mxyr	dev_PH	Block	Blk_Fxn # parm_name
  10	25	17.6675	  0	 10	0	  1	0	0	0	0	0	0	0	#_SR_LN(R0)  
 0.2	 1	    0.8	0.8	0.2	1	 -4	0	0	0	0	0	0	0	#_SR_BH_steep
-  0	 2	    0.6	0.8	0.8	0	 -3	0	0	0	0	0	0	0	#_SR_sigmaR  
+  0	 2	    0.9	0.8	0.8	0	 -3	0	0	0	0	0	0	0	#_SR_sigmaR  
  -5	 5	      0	  0	  1	0	 -5	0	0	0	0	0	0	0	#_SR_regime  
   0	 0	      0	  0	  0	0	-99	0	0	0	0	0	0	0	#_SR_autocorr
 #_no timevary SR parameters
@@ -318,7 +319,7 @@
 -25	15	      -15	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PS_IDID_PHPH5(36)
 -15	15	 -1.78635	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PL_JP7(37)       
 -15	15	 0.408098	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PL_ALL8(38)      
--15	15	 -11.2097	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PS_UNASSOC6(39)  
+-30	15	 -11.2097	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PS_UNASSOC6(39)  
 -15	15	 -9.87556	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PS_UNASSOC7(40)  
 -15	15	 -7.83582	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PS_UNASSOC8(41)  
 #_no timevary Q parameters
@@ -581,47 +582,48 @@
 #_AgeSelex
 #_No age_selex_parm
 #_Dirichlet parameters
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_1 
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_2 
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_3 
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_4 
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_5 
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_6 
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_7 
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_8 
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_9 
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_10
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_11
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_12
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_13
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_14
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_15
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_16
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_17
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_18
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_19
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_20
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_21
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_22
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_23
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_24
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_25
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_26
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_27
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_28
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_29
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_30
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_31
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_32
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_33
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_34
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_35
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_36
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_37
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_38
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_39
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_40
--5	20	0.5	0	1.813	6	7	0	0	0	0	0	0	0	#_41
+-5  20  0.5 -1.31682    1.813   6   7   0   0   0   0   0   0   0   #_1
+-5  20  0.5 0.286313    1.813   6   7   0   0   0   0   0   0   0   #_2
+-10 20  0.5 -1.08548    1.813   6   7   0   0   0   0   0   0   0   #_3
+-5  20  0.5 -1.02263    1.813   6   7   0   0   0   0   0   0   0   #_4
+-5  20  0.5 0.206595    1.813   6   7   0   0   0   0   0   0   0   #_5
+-5  20  0.5 -1.547      1.813   6   7   0   0   0   0   0   0   0   #_6
+-5  20  0.5 -1.45947    1.813   6   7   0   0   0   0   0   0   0   #_7
+-5  20  0.5 -0.332452   1.813   6   7   0   0   0   0   0   0   0   #_8
+-5  20  0.5 -1.56485    1.813   6   7   0   0   0   0   0   0   0   #_9
+-5  20  0.5 -0.959994   1.813   6   7   0   0   0   0   0   0   0   #_10
+-5  20  0.5 -0.213817   1.813   6   7   0   0   0   0   0   0   0   #_11
+-5  20  0.5 -0.639215   1.813   6   7   0   0   0   0   0   0   0   #_12
+-5  20  0.5 -1.24392    1.813   6   7   0   0   0   0   0   0   0   #_13
+-5  20  0.5 -0.548786   1.813   6   7   0   0   0   0   0   0   0   #_14
+-5  20  0.5 -0.314872   1.813   6   7   0   0   0   0   0   0   0   #_15
+-5  20  0.5 0.351106    1.813   6   7   0   0   0   0   0   0   0   #_16
+-5  20  0.5 -1.18791    1.813   6   7   0   0   0   0   0   0   0   #_17
+-5  20  0.5 -0.267595   1.813   6   7   0   0   0   0   0   0   0   #_18
+-5  20  0.5 -0.282601   1.813   6   7   0   0   0   0   0   0   0   #_19
+-5  20  0.5 -0.473722   1.813   6   7   0   0   0   0   0   0   0   #_20
+-5  20  0.5 -1.62748    1.813   6   7   0   0   0   0   0   0   0   #_21
+-5  20  0.5 -1.55759    1.813   6   7   0   0   0   0   0   0   0   #_22
+-5  20  0.5 -1.13481    1.813   6   7   0   0   0   0   0   0   0   #_23
+-5  20  0.5 -1.04492    1.813   6   7   0   0   0   0   0   0   0   #_24
+-5  20  0.5 0.189323    1.813   6   7   0   0   0   0   0   0   0   #_25
+-5  20  0.5 0.028764    1.813   6   7   0   0   0   0   0   0   0   #_26
+-5  20  0.5 -1.49308    1.813   6   7   0   0   0   0   0   0   0   #_27
+-5  20  0.5 -0.734688   1.813   6   7   0   0   0   0   0   0   0   #_28
+-5  20  0.5 -0.140786   1.813   6   7   0   0   0   0   0   0   0   #_29
+-5  20  0.5 -0.305089   1.813   6   7   0   0   0   0   0   0   0   #_30
+-5  20  0.5 -0.977748   1.813   6   7   0   0   0   0   0   0   0   #_31
+-5  20  0.5 -0.531974   1.813   6   7   0   0   0   0   0   0   0   #_32
+-5  20  0.5 -0.437943   1.813   6   7   0   0   0   0   0   0   0   #_33
+-5  20  0.5 -1.00951    1.813   6   7   0   0   0   0   0   0   0   #_34
+-5  20  0.5 0.288205    1.813   6   7   0   0   0   0   0   0   0   #_35
+-5  20  0.5 0.0704949   1.813   6   7   0   0   0   0   0   0   0   #_36
+-5  20  0.5 0.130323    1.813   6   7   0   0   0   0   0   0   0   #_37
+-5  20  0.5 0.450993    1.813   6   7   0   0   0   0   0   0   0   #_38
+-5  20  0.5 0.471264    1.813   6   7   0   0   0   0   0   0   0   #_39
+-5  20  0.5 0.443978    1.813   6   7   0   0   0   0   0   0   0   #_40
+-5  20  0.5 0.443168    1.813   6   7   0   0   0   0   0   0   0   #_41
+
 #_no timevary selex parameters
 #
 0 #  use 2D_AR1 selectivity(0/1):  experimental feature

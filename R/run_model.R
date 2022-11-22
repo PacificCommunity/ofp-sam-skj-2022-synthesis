@@ -1,6 +1,6 @@
 #Script to transfer the data currently use it
 
-run_results = ("C:/git/PacificCommunity/ofp-sam/ofp-sam-skj-2022-synthesis/model_ouput/8_regions_results")
+run_results <- ("C:/git/PacificCommunity/ofp-sam/ofp-sam-skj-2022-synthesis/model_output/8_regions_results")
 
 input_data <- r4ss::copy_SS_inputs(
   dir.old = "C:/git/PacificCommunity/ofp-sam/ofp-sam-skj-2022-synthesis/model_input/8_regions",
@@ -12,6 +12,8 @@ input_data <- r4ss::copy_SS_inputs(
 setwd(run_results)
 #run with no hessian
 system("ss.exe -nohess") #version 3.20
+
+
 
 cat <- SS_output(run_results, covar=FALSE)
 SS_plots(cat)

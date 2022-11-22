@@ -1,0 +1,7661 @@
+#V3.30
+#C fishing mortality uses the hybrid method
+#
+0 # 0 means do not read wtatage.ss; 1 means read and usewtatage.ss and also read and use growth parameters
+1 #_N_Growth_Patterns
+1 #_N_platoons_Within_GrowthPattern
+3 # recr_dist_method for parameters
+1 # not yet implemented; Future usage:Spawner-Recruitment; 1=global; 2=by area
+8 # number of recruitment settlement assignments 
+0 # unused option
+# for each settlement assignment:
+#_GPattern	month	area	age
+1	1	1	0	#_recr_dist_pattern1
+1	1	2	0	#_recr_dist_pattern2
+1	1	3	0	#_recr_dist_pattern3
+1	1	4	0	#_recr_dist_pattern4
+1	1	5	0	#_recr_dist_pattern5
+1	1	6	0	#_recr_dist_pattern6
+1	1	7	0	#_recr_dist_pattern7
+1	1	8	0	#_recr_dist_pattern8
+#
+224 #_N_movement_definitions goes here if N_areas > 1
+0.25 #_first age that moves (real age at begin of season, not integer) also cond on do_migration>0
+#_move definition for seas, morph, source, dest, age1, age2
+1	1	1	2	0.25	4	#_1  
+1	1	1	3	0.25	4	#_2  
+1	1	1	4	0.25	4	#_3  
+1	1	1	5	0.25	4	#_4  
+1	1	1	6	0.25	4	#_5  
+1	1	1	7	0.25	4	#_6  
+1	1	1	8	0.25	4	#_7  
+1	1	2	1	0.25	4	#_8  
+1	1	2	3	0.25	4	#_9  
+1	1	2	4	0.25	4	#_10 
+1	1	2	5	0.25	4	#_11 
+1	1	2	6	0.25	4	#_12 
+1	1	2	7	0.25	4	#_13 
+1	1	2	8	0.25	4	#_14 
+1	1	3	1	0.25	4	#_15 
+1	1	3	2	0.25	4	#_16 
+1	1	3	4	0.25	4	#_17 
+1	1	3	5	0.25	4	#_18 
+1	1	3	6	0.25	4	#_19 
+1	1	3	7	0.25	4	#_20 
+1	1	3	8	0.25	4	#_21 
+1	1	4	1	0.25	4	#_22 
+1	1	4	2	0.25	4	#_23 
+1	1	4	3	0.25	4	#_24 
+1	1	4	5	0.25	4	#_25 
+1	1	4	6	0.25	4	#_26 
+1	1	4	7	0.25	4	#_27 
+1	1	4	8	0.25	4	#_28 
+1	1	5	1	0.25	4	#_29 
+1	1	5	2	0.25	4	#_30 
+1	1	5	3	0.25	4	#_31 
+1	1	5	4	0.25	4	#_32 
+1	1	5	6	0.25	4	#_33 
+1	1	5	7	0.25	4	#_34 
+1	1	5	8	0.25	4	#_35 
+1	1	6	1	0.25	4	#_36 
+1	1	6	2	0.25	4	#_37 
+1	1	6	3	0.25	4	#_38 
+1	1	6	4	0.25	4	#_39 
+1	1	6	5	0.25	4	#_40 
+1	1	6	7	0.25	4	#_41 
+1	1	6	8	0.25	4	#_42 
+1	1	7	1	0.25	4	#_43 
+1	1	7	2	0.25	4	#_44 
+1	1	7	3	0.25	4	#_45 
+1	1	7	4	0.25	4	#_46 
+1	1	7	5	0.25	4	#_47 
+1	1	7	6	0.25	4	#_48 
+1	1	7	8	0.25	4	#_49 
+1	1	8	1	0.25	4	#_50 
+1	1	8	2	0.25	4	#_51 
+1	1	8	3	0.25	4	#_52 
+1	1	8	4	0.25	4	#_53 
+1	1	8	5	0.25	4	#_54 
+1	1	8	6	0.25	4	#_55 
+1	1	8	7	0.25	4	#_56 
+2	1	1	2	0.25	4	#_57 
+2	1	1	3	0.25	4	#_58 
+2	1	1	4	0.25	4	#_59 
+2	1	1	5	0.25	4	#_60 
+2	1	1	6	0.25	4	#_61 
+2	1	1	7	0.25	4	#_62 
+2	1	1	8	0.25	4	#_63 
+2	1	2	1	0.25	4	#_64 
+2	1	2	3	0.25	4	#_65 
+2	1	2	4	0.25	4	#_66 
+2	1	2	5	0.25	4	#_67 
+2	1	2	6	0.25	4	#_68 
+2	1	2	7	0.25	4	#_69 
+2	1	2	8	0.25	4	#_70 
+2	1	3	1	0.25	4	#_71 
+2	1	3	2	0.25	4	#_72 
+2	1	3	4	0.25	4	#_73 
+2	1	3	5	0.25	4	#_74 
+2	1	3	6	0.25	4	#_75 
+2	1	3	7	0.25	4	#_76 
+2	1	3	8	0.25	4	#_77 
+2	1	4	1	0.25	4	#_78 
+2	1	4	2	0.25	4	#_79 
+2	1	4	3	0.25	4	#_80 
+2	1	4	5	0.25	4	#_81 
+2	1	4	6	0.25	4	#_82 
+2	1	4	7	0.25	4	#_83 
+2	1	4	8	0.25	4	#_84 
+2	1	5	1	0.25	4	#_85 
+2	1	5	2	0.25	4	#_86 
+2	1	5	3	0.25	4	#_87 
+2	1	5	4	0.25	4	#_88 
+2	1	5	6	0.25	4	#_89 
+2	1	5	7	0.25	4	#_90 
+2	1	5	8	0.25	4	#_91 
+2	1	6	1	0.25	4	#_92 
+2	1	6	2	0.25	4	#_93 
+2	1	6	3	0.25	4	#_94 
+2	1	6	4	0.25	4	#_95 
+2	1	6	5	0.25	4	#_96 
+2	1	6	7	0.25	4	#_97 
+2	1	6	8	0.25	4	#_98 
+2	1	7	1	0.25	4	#_99 
+2	1	7	2	0.25	4	#_100
+2	1	7	3	0.25	4	#_101
+2	1	7	4	0.25	4	#_102
+2	1	7	5	0.25	4	#_103
+2	1	7	6	0.25	4	#_104
+2	1	7	8	0.25	4	#_105
+2	1	8	1	0.25	4	#_106
+2	1	8	2	0.25	4	#_107
+2	1	8	3	0.25	4	#_108
+2	1	8	4	0.25	4	#_109
+2	1	8	5	0.25	4	#_110
+2	1	8	6	0.25	4	#_111
+2	1	8	7	0.25	4	#_112
+3	1	1	2	0.25	4	#_113
+3	1	1	3	0.25	4	#_114
+3	1	1	4	0.25	4	#_115
+3	1	1	5	0.25	4	#_116
+3	1	1	6	0.25	4	#_117
+3	1	1	7	0.25	4	#_118
+3	1	1	8	0.25	4	#_119
+3	1	2	1	0.25	4	#_120
+3	1	2	3	0.25	4	#_121
+3	1	2	4	0.25	4	#_122
+3	1	2	5	0.25	4	#_123
+3	1	2	6	0.25	4	#_124
+3	1	2	7	0.25	4	#_125
+3	1	2	8	0.25	4	#_126
+3	1	3	1	0.25	4	#_127
+3	1	3	2	0.25	4	#_128
+3	1	3	4	0.25	4	#_129
+3	1	3	5	0.25	4	#_130
+3	1	3	6	0.25	4	#_131
+3	1	3	7	0.25	4	#_132
+3	1	3	8	0.25	4	#_133
+3	1	4	1	0.25	4	#_134
+3	1	4	2	0.25	4	#_135
+3	1	4	3	0.25	4	#_136
+3	1	4	5	0.25	4	#_137
+3	1	4	6	0.25	4	#_138
+3	1	4	7	0.25	4	#_139
+3	1	4	8	0.25	4	#_140
+3	1	5	1	0.25	4	#_141
+3	1	5	2	0.25	4	#_142
+3	1	5	3	0.25	4	#_143
+3	1	5	4	0.25	4	#_144
+3	1	5	6	0.25	4	#_145
+3	1	5	7	0.25	4	#_146
+3	1	5	8	0.25	4	#_147
+3	1	6	1	0.25	4	#_148
+3	1	6	2	0.25	4	#_149
+3	1	6	3	0.25	4	#_150
+3	1	6	4	0.25	4	#_151
+3	1	6	5	0.25	4	#_152
+3	1	6	7	0.25	4	#_153
+3	1	6	8	0.25	4	#_154
+3	1	7	1	0.25	4	#_155
+3	1	7	2	0.25	4	#_156
+3	1	7	3	0.25	4	#_157
+3	1	7	4	0.25	4	#_158
+3	1	7	5	0.25	4	#_159
+3	1	7	6	0.25	4	#_160
+3	1	7	8	0.25	4	#_161
+3	1	8	1	0.25	4	#_162
+3	1	8	2	0.25	4	#_163
+3	1	8	3	0.25	4	#_164
+3	1	8	4	0.25	4	#_165
+3	1	8	5	0.25	4	#_166
+3	1	8	6	0.25	4	#_167
+3	1	8	7	0.25	4	#_168
+4	1	1	2	0.25	4	#_169
+4	1	1	3	0.25	4	#_170
+4	1	1	4	0.25	4	#_171
+4	1	1	5	0.25	4	#_172
+4	1	1	6	0.25	4	#_173
+4	1	1	7	0.25	4	#_174
+4	1	1	8	0.25	4	#_175
+4	1	2	1	0.25	4	#_176
+4	1	2	3	0.25	4	#_177
+4	1	2	4	0.25	4	#_178
+4	1	2	5	0.25	4	#_179
+4	1	2	6	0.25	4	#_180
+4	1	2	7	0.25	4	#_181
+4	1	2	8	0.25	4	#_182
+4	1	3	1	0.25	4	#_183
+4	1	3	2	0.25	4	#_184
+4	1	3	4	0.25	4	#_185
+4	1	3	5	0.25	4	#_186
+4	1	3	6	0.25	4	#_187
+4	1	3	7	0.25	4	#_188
+4	1	3	8	0.25	4	#_189
+4	1	4	1	0.25	4	#_190
+4	1	4	2	0.25	4	#_191
+4	1	4	3	0.25	4	#_192
+4	1	4	5	0.25	4	#_193
+4	1	4	6	0.25	4	#_194
+4	1	4	7	0.25	4	#_195
+4	1	4	8	0.25	4	#_196
+4	1	5	1	0.25	4	#_197
+4	1	5	2	0.25	4	#_198
+4	1	5	3	0.25	4	#_199
+4	1	5	4	0.25	4	#_200
+4	1	5	6	0.25	4	#_201
+4	1	5	7	0.25	4	#_202
+4	1	5	8	0.25	4	#_203
+4	1	6	1	0.25	4	#_204
+4	1	6	2	0.25	4	#_205
+4	1	6	3	0.25	4	#_206
+4	1	6	4	0.25	4	#_207
+4	1	6	5	0.25	4	#_208
+4	1	6	7	0.25	4	#_209
+4	1	6	8	0.25	4	#_210
+4	1	7	1	0.25	4	#_211
+4	1	7	2	0.25	4	#_212
+4	1	7	3	0.25	4	#_213
+4	1	7	4	0.25	4	#_214
+4	1	7	5	0.25	4	#_215
+4	1	7	6	0.25	4	#_216
+4	1	7	8	0.25	4	#_217
+4	1	8	1	0.25	4	#_218
+4	1	8	2	0.25	4	#_219
+4	1	8	3	0.25	4	#_220
+4	1	8	4	0.25	4	#_221
+4	1	8	5	0.25	4	#_222
+4	1	8	6	0.25	4	#_223
+4	1	8	7	0.25	4	#_224
+0 #_Nblock_Patterns
+#_Cond 0 #_blocks_per_pattern
+# begin and end years of blocks
+#
+# controls for all timevary parameters 
+1 #_env/block/dev_adjust_method for all time-vary parms (1=warn relative to base parm bounds; 3=no bound check)
+#
+# AUTOGEN
+1 1 1 1 1 # autogen: 1st element for biology, 2nd for SR, 3rd for Q, 4th reserved, 5th for selex
+# where: 0 = autogen all time-varying parms; 1 = read each time-varying parm line; 2 = read then autogen if parm min==-12345
+#
+# setup for M, growth, maturity, fecundity, recruitment distibution, movement
+#
+3 #_natM_type:_0=1Parm; 1=N_breakpoints;_2=Lorenzen;_3=agespecific;_4=agespec_withseasinterpolate
+#_ #_Age_natmort_by sex x growthpattern
+#_Age_0  Age_1 Age_2 Age_3 Age_4 Age_5 Age_6 Age_7 Age_8 Age_9 Age_10   Age_11   Age_12   Age_13   Age_14   Age_15   Age_16   
+0 0.6729   0.6729   0.5948   0.4446   #_M
+1 # GrowthModel: 1=vonBert with L1&L2; 2=Richards with L1&L2; 3=age_specific_K_incr; 4=age_specific_K_decr;5=age_specific_K_each; 6=NA; 7=NA; 8=growth cessation                                                  
+1 #_Age(post-settlement)_for_L1;linear growth below this                                                 
+4 #_Growth_Age_for_L2 (999 to use as Linf)                                                  
+-999 #_exponential decay for growth above maxage (value should approx initial Z; -999 replicates 3.24; -998 to not allow growth above maxage)                                                   
+0 #_placeholder for future growth feature                                                 
+#                                                  
+0 #_SD_add_to_LAA (set to 0.1 for SS2 V1.x compatibility)                                                   
+0 #_CV_Growth_Pattern:  0 CV=f(LAA); 1 CV=F(A); 2 SD=F(LAA); 3 SD=F(A); 4 logSD=F(A)                                                   
+3 #_maturity_option:  1=length logistic; 2=age logistic; 3=read age-maturity matrix by growth_pattern; 4=read age-fecundity; 5=disabled; 6=read length-maturity                                                   
+# Age Maturity or Age fecundity:                                                 
+#_Age_0  Age_1 Age_2 Age_3 Age_4
+0 0.0196337   0.107812 0.332058 1 #_Maturity
+0 #_First_Mature_Age
+1 #_fecundity option:(1)eggs=Wt*(a+b*Wt);(2)eggs=a*L^b;(3)eggs=a*Wt^b; (4)eggs=a+b*L; (5)eggs=a+b*W
+0 #_hermaphroditism option:  0=none; 1=female-to-male age-specific fxn; -1=male-to-female age-specific fxn
+1 #_parameter_offset_approach (1=none, 2= M, G, CV_G as offset from female-GP1, 3=like SS2 V1.x)
+#
+#_growth_parms
+#_LO	HI	INIT	PRIOR	PR_SD	PR_type	PHASE	env_var&link	dev_link	dev_minyr	dev_maxyr	dev_PH	Block	Block_Fxn
+   10	  30	    22.7832	    22.7832	 10	0	-3	0	0	0	0	0.5	0	0	#_L_at_Amin_Fem_GP_1       
+   70	 130	    83.8827	    83.8827	 10	0	-2	0	0	0	0	0.5	0	0	#_L_at_Amax_Fem_GP_1       
+ 0.05	 0.4	     0.2147	     0.2147	0.8	0	-3	0	0	0	0	0.5	0	0	#_VonBert_K_Fem_GP_1       
+5e-05	0.25	       0.05	       0.01	0.8	0	 5	0	0	0	0	0.5	0	0	#_CV_young_Fem_GP_1        
+1e-05	0.35	      0.005	       0.01	0.8	0	 5	0	0	0	0	0.5	0	0	#_CV_old_Fem_GP_1          
+   -3	   3	1.14373e-05	1.14373e-05	0.8	0	-3	0	0	0	0	0.5	0	0	#_Wtlen_1_Fem_GP_1         
+    2	   5	    3.14828	    3.14828	0.8	0	-3	0	0	0	0	0.5	0	0	#_Wtlen_2_Fem_GP_1         
+   -3	1000	         85	         85	0.8	0	-3	0	0	0	0	0.5	0	0	#_Mat50%_Fem_GP_1          
+  -10	1000	         -9	         -9	0.8	0	-3	0	0	0	0	0.5	0	0	#_Mat_slope_Fem_GP_1       
+   -3	   3	          1	          1	0.8	0	-3	0	0	0	0	0.5	0	0	#_Eggs/kg_inter_Fem_GP_1   
+   -3	   3	          0	          0	0.8	0	-3	0	0	0	0	0.5	0	0	#_Eggs/kg_slope_wt_Fem_GP_1
+#_no timevary MG parameters
+# Hermaphroditism
+#  Recruitment Distribution  
+ -4 4 0 0 99 0 2 0 0 0 0 0.5 0 0 # RecrDist_GP_1
+ -4 4 0 0 99 0 1 0 0 0 0 0.5 0 0 # RecrDist_Area_1
+ -4 4 0 0 99 0 2 0 0 0 0 0.5 0 0 # RecrDist_Area_2
+ -4 4 0 0 99 0 2 0 0 0 0 0.5 0 0 # RecrDist_Area_3
+ -4 4 0 0 99 0 1 0 0 0 0 0.5 0 0 # RecrDist_Area_4
+ -4 4 0 0 99 0 2 0 0 0 0 0.5 0 0 # RecrDist_Area_5
+ -4 4 0 0 99 0 2 0 0 0 0 0.5 0 0 # RecrDist_Area_6
+ -4 4 0 0 99 0 1 0 0 0 0 0.5 0 0 # RecrDist_Area_7
+ -4 4 0 0 99 0 2 0 0 0 0 0.5 0 0 # RecrDist_Area_8
+
+ -4 4 0 0 99 0 2 0 0 0 0 0.5 0 0 # RecrDist_timing_1
+ 
+ -4 4 0 0 99 0 2 0 0 0 0 0.5 0 0 # RecrDist_timing_1
+ -4 4 0 0 99 0 2 0 0 0 0 0.5 0 0 # RecrDist_timing_1
+
+#  Cohort growth dev base
+ 0.1 10 1 1 1 0 -1 0 0 0 0 0 0 0 # CohortGrowDev#
+#  Movement
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_7
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_8
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_8
+
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_1
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_2
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    1    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_3
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_4
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_5
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_A_seas_1_GP_1from_1to_6
+ -6  6  0.1  0   99   0    3    0   0   0   0   0.5   0   0 # MoveParm_B_seas_1_GP_1from_1to_6
+#  fraction female, by GP
+ 1e-06 0.999999 0.5 0.5 0.5 0 -99 0 0 0 0 0 0 0 # FracFemale_GP_1
+
+#_seasonal_effects_on_biology_parms
+0 0 0 0 0 0 0 0 0 0 #_femwtlen1,femwtlen2,mat1,mat2,fec1,fec2,Malewtlen1,malewtlen2,L1,K
+#_ LO HI INIT PRIOR PR_SD PR_type PHASE
+#_Cond -2 2 0 0 -1 99 -2 #_placeholder when no seasonal MG parameters
+#
+3 #_Spawner-Recruitment; 2=Ricker; 3=std_B-H; 4=SCAA;5=Hockey; 6=B-H_flattop; 7=survival_3Parm;8=Shepard_3Parm
+0 # 0/1 to use steepness in initial equ recruitment calculation
+0 # future feature: 0/1 to make realized sigmaR a function of SR curvature
+#_LO	HI	INIT	PRIOR	PR_SD	PR_type	PHASE	env-var	use_dev	dev_mnyr	dev_mxyr	dev_PH	Block	Blk_Fxn # parm_name
+ -2	25	 10	 10	 10	0	  1	0	0	0	0	0	0	0	#_SR_LN(R0)  
+0.2	 1	0.8	0.8	0.2	1	 -4	0	0	0	0	0	0	0	#_SR_BH_steep
+  0	 2	0.6	0.8	0.8	0	 -4	0	0	0	0	0	0	0	#_SR_sigmaR  
+ -5	 5	  0	  0	  1	0	 -4	0	0	0	0	0	0	0	#_SR_regime  
+  0	 0	  0	  0	  0	0	-99	0	0	0	0	0	0	0	#_SR_autocorr
+#_no timevary SR parameters
+1 #do_recdev:  0=none; 1=devvector (R=F(SSB)+dev); 2=deviations (R=F(SSB)+dev); 3=deviations (R=R0*dev; dev2=R-f(SSB)); 4=like 3 with sum(dev2) adding penalty
+1977 # first year of main recr_devs; early devs can preceed this era
+2019 # last year of main recr_devs; forecast devs start in following year
+4 #_recdev phase 
+1 # (0/1) to read 13 advanced options
+ -10 #_recdev_early_start (0=none; neg value makes relative to recdev_start)
+ 1 #_recdev_early_phase
+ 0 #_forecast_recruitment phase (incl. late recr) (0 value resets to maxphase+1)
+ 1 #_lambda for Fcast_recr_like occurring before endyr+1
+ 1940.3 #_last_yr_nobias_adj_in_MPD; begin of ramp
+ 1972.8 #_first_yr_fullbias_adj_in_MPD; begin of plateau
+ 2011.7 #_last_yr_fullbias_adj_in_MPD
+ 2016.3 #_end_yr_for_ramp_in_MPD (can be in forecast to shape ramp, but SS sets bias_adj to 0.0 for fcast yrs)
+ 0.9431 #_max_bias_adj_in_MPD (typical ~0.8; -3 sets all years to 0.0; -2 sets all non-forecast yrs w/ estimated recdevs to 1.0; -1 sets biasadj=1.0 for all yrs w/ recdevs)
+ 0 #_period of cycles in recruitment (N parms read below)
+ -5 #min rec_dev
+  5 #max rec_dev
+  0 #_read_recdevs
+#_end of advanced SR options
+#
+#_placeholder for full parameter lines for recruitment cycles
+# read specified recr devs
+#_Yr Input_value
+#
+# all recruitment deviations
+#  1964R 1965R 1966R 1967R 1968R 1969R 1970R 1971R 1972R 1973R 1974R 1975R 1976R 1977R 1978R 1979R 1980R 1981R 1982R 1983R 1984R 1985R 1986R 1987R 1988R 1989R 1990R 1991R 1992R 1993R 1994R 1995R 1996R 1997R 1998R 1999R 2000R 2001R 2002R 2003F 2004F 2005F 2006F 2007F 2008F
+#  -0.958608 -0.82469 -0.217517 0.731944 0.556985 -0.0515812 0.0164173 -0.0638424 -0.0835044 0.118318 -0.113027 -0.157121 -0.313353 -0.3759 0.132074 0.401207 -0.303864 0.0100134 0.00346138 0.0539474 0.0154272 0.160532 0.254582 0.107604 0.114435 0.159815 0.246756 0.0183996 0.0508513 -0.330457 -0.0503907 -0.021562 0.0082125 0.134042 0.194113 0.14576 0.076261 0.32262 -0.168362 0 0 0 0 0 0
+# implementation error by year in forecast:  0 0
+#
+#Fishing Mortality info 
+0.1 # F ballpark value in units of annual_F
+-1999 # F ballpark year (neg value to disable)
+3    # F_Method:  1=Pope; 2=instan. F; 3=hybrid (hybrid is recommended)
+2.99 # max F or harvest rate, depends on F_Method
+# no additional F input needed for Fmethod 1
+# if Fmethod=2; read overall start F value; overall phase; N detailed inputs to read
+# if Fmethod=3; read N iterations for tuning for Fmethod 3
+4  # N iterations for tuning F in hybrid method (recommend 3 to 7)
+#
+#
+#_initial_F_parms; count = 0
+#
+#_Q_setup for fleets with cpue or survey data
+#_fleet	link	link_info	extra_se	biasadj	float  #  fleetname
+   32	1	0	0	0	0	#_index-PL JP 1       
+   33	1	0	0	0	0	#_index-PL ALL 2      
+   34	1	0	0	0	0	#_index-PL JP 3       
+   35	1	0	0	0	0	#_index-PL ALL 4      
+   36	1	0	0	0	0	#_index-PS IDID_PHPH 5
+   37	1	0	0	0	0	#_index-PL JP 7       
+   38	1	0	0	0	0	#_index-PL ALL 8      
+   39	1	0	0	0	0	#_index-PS UNASSOC 6  
+   40	1	0	0	0	0	#_index-PS UNASSOC 7  
+   41	1	0	0	0	0	#_index-PS UNASSOC 8  
+-9999	0	0	0	0	0	#_terminator          
+#_Q_parms(if_any);Qunits_are_ln(q)
+#
+#_LO  HI  INIT  PRIOR PR_SD PR_type PHASE env-var use_dev dev_mnyr  dev_mxyr  dev_PH  Block Blk_Fxn  #  parm_name NA
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PL JP 1       
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PL ALL 2      
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PL JP 3       
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PL ALL 4      
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PS IDID_PHPH 5
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PL JP 7       
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PL ALL 8      
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PS UNASSOC 6  
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PS UNASSOC 7  
+-25 25  0 0 1 0 1 0 0 0 0 0 0 0 #_LnQ_base_index-PS UNASSOC 8  
+#_no timevary Q parameters
+#
+#_size_selex_patterns
+#Pattern:_0;  parm=0; selex=1.0 for all sizes
+#Pattern:_1;  parm=2; logistic; with 95% width specification
+#Pattern:_5;  parm=2; mirror another size selex; PARMS pick the min-max bin to mirror
+#Pattern:_11; parm=2; selex=1.0  for specified min-max population length bin range
+#Pattern:_15; parm=0; mirror another age or length selex
+#Pattern:_6;  parm=2+special; non-parm len selex
+#Pattern:_43; parm=2+special+2;  like 6, with 2 additional param for scaling (average over bin range)
+#Pattern:_8;  parm=8; double_logistic with smooth transitions and constant above Linf option
+#Pattern:_9;  parm=6; simple 4-parm double logistic with starting length; parm 5 is first length; parm 6=1 does desc as offset
+#Pattern:_21; parm=2+special; non-parm len selex, read as pairs of size, then selex
+#Pattern:_22; parm=4; double_normal as in CASAL
+#Pattern:_23; parm=6; double_normal where final value is directly equal to sp(6) so can be >1.0
+#Pattern:_24; parm=6; double_normal with sel(minL) and sel(maxL), using joiners
+#Pattern:_25; parm=3; exponential-logistic in size
+#Pattern:_27; parm=3+special; cubic spline 
+#Pattern:_42; parm=2+special+3; // like 27, with 2 additional param for scaling (average over bin range)
+#_discard_options:_0=none;_1=define_retention;_2=retention&mortality;_3=all_discarded_dead;_4=define_dome-shaped_retention
+#_Pattern Discard Male Special
+ 27 0 0 4 #_1 PL JP 1                          
+ 27 0 0 4 #_2 PS ALL 1                         
+ 27 0 0 3 #_3 LL ALL 1                         
+ 27 0 0 4 #_4 PL ALL 2                         
+ 27 0 0 4 #_5 PS ALL 2                         
+ 27 0 0 3 #_6 LL ALL 2                         
+ 27 0 0 4 #_7 PL JP 3                          
+ 27 0 0 4 #_8 PS ALL 3                         
+ 27 0 0 3 #_9 LL ALL 3                         
+ 27 0 0 6 #_10 Dom PH 5                        
+ 27 0 0 5 #_11 Dom ID 5                        
+ 27 0 0 5 #_12 IDID_PHPH 5                     
+ 27 0 0 6 #_13 PL ALL 5                        
+ 27 0 0 4 #_14 PS ASSOC_no(PHPH, IDID, VN) 5   
+ 27 0 0 4 #_15 PS UNASSOC_no(PHPH, IDID, VN) 5 
+ 27 0 0 5 #_16 DOM VN 5                        
+ 27 0 0 3 #_17 LL ALL 5                        
+ 27 0 0 4 #_18 PL ALL 6                        
+ 27 0 0 4 #_19 PS ASSOC 6                      
+ 27 0 0 4 #_20 PS UNASSOC 6                    
+ 27 0 0 3 #_21 LL ALL 6                        
+ 27 0 0 4 #_22 PL ALL 4                        
+ 27 0 0 3 #_23 LL ALL 4                        
+ 27 0 0 4 #_24 PL JP 7                         
+ 27 0 0 4 #_25 PS ASSOC 7                      
+ 27 0 0 4 #_26 PS UNASSOC 7                    
+ 27 0 0 3 #_27 LL ALL 7                        
+ 27 0 0 4 #_28 PL All 8                        
+ 27 0 0 4 #_29 PS ASSOC 8                      
+ 27 0 0 4 #_30 PS UNASSOC 8                    
+ 27 0 0 3 #_31 LL ALL 8                        
+ 27 0 0 4 #_32 index-PL JP 1                   
+ 27 0 0 4 #_33 index-PL ALL 2                  
+ 27 0 0 4 #_34 index-PL JP 3                   
+ 27 0 0 4 #_35 index-PL ALL 4                  
+ 27 0 0 5 #_36 index-PS IDID_PHPH 5            
+ 27 0 0 4 #_37 index-PL JP 7                   
+ 27 0 0 4 #_38 index-PL ALL 8                  
+ 27 0 0 4 #_39 index-PS UNASSOC 6              
+ 27 0 0 4 #_40 index-PS UNASSOC 7              
+ 27 0 0 4 #_41 index-PS UNASSOC 8             
+#
+#_age_selex_patterns
+#Pattern:_0; parm=0; selex=1.0 for ages 0 to maxage
+#Pattern:_10; parm=0; selex=1.0 for ages 1 to maxage
+#Pattern:_11; parm=2; selex=1.0  for specified min-max age
+#Pattern:_12; parm=2; age logistic
+#Pattern:_13; parm=8; age double logistic
+#Pattern:_14; parm=nages+1; age empirical
+#Pattern:_15; parm=0; mirror another age or length selex
+#Pattern:_16; parm=2; Coleraine - Gaussian
+#Pattern:_17; parm=nages+1; empirical as random walk  N parameters to read can be overridden by setting special to non-zero
+#Pattern:_41; parm=2+nages+1; // like 17, with 2 additional param for scaling (average over bin range)
+#Pattern:_18; parm=8; double logistic - smooth transition
+#Pattern:_19; parm=6; simple 4-parm double logistic with starting age
+#Pattern:_20; parm=6; double_normal,using joiners
+#Pattern:_26; parm=3; exponential-logistic in age
+#Pattern:_27; parm=3+special; cubic spline in age
+#Pattern:_42; parm=2+special+3; // cubic spline; with 2 additional param for scaling (average over bin range)
+#Age patterns entered with value >100 create Min_selage from first digit and pattern from remainder
+#_Pattern Discard Male Special
+#_age_selex_patterns
+0 0 0 0 #_1 PL JP 1                         
+0 0 0 0 #_2 PS ALL 1                        
+0 0 0 0 #_3 LL ALL 1                        
+0 0 0 0 #_4 PL ALL 2                        
+0 0 0 0 #_5 PS ALL 2                        
+0 0 0 0 #_6 LL ALL 2                        
+0 0 0 0 #_7 PL JP 3                         
+0 0 0 0 #_8 PS ALL 3                        
+0 0 0 0 #_9 LL ALL 3                        
+0 0 0 0 #_10 Dom PH 5                       
+0 0 0 0 #_11 Dom ID 5                       
+0 0 0 0 #_12 IDID_PHPH 5                    
+0 0 0 0 #_13 PL ALL 5                       
+0 0 0 0 #_14 PS ASSOC_no(PHPH, IDID, VN) 5  
+0 0 0 0 #_15 PS UNASSOC_no(PHPH, IDID, VN) 5
+0 0 0 0 #_16 DOM VN 5                       
+0 0 0 0 #_17 LL ALL 5                       
+0 0 0 0 #_18 PL ALL 6                       
+0 0 0 0 #_19 PS ASSOC 6                     
+0 0 0 0 #_20 PS UNASSOC 6                   
+0 0 0 0 #_21 LL ALL 6                       
+0 0 0 0 #_22 PL ALL 4                       
+0 0 0 0 #_23 LL ALL 4                       
+0 0 0 0 #_24 PL JP 7                        
+0 0 0 0 #_25 PS ASSOC 7                     
+0 0 0 0 #_26 PS UNASSOC 7                   
+0 0 0 0 #_27 LL ALL 7                       
+0 0 0 0 #_28 PL All 8                       
+0 0 0 0 #_29 PS ASSOC 8                     
+0 0 0 0 #_30 PS UNASSOC 8                   
+0 0 0 0 #_31 LL ALL 8                       
+0 0 0 0 #_32 index-PL JP 1                  
+0 0 0 0 #_33 index-PL ALL 2                 
+0 0 0 0 #_34 index-PL JP 3                  
+0 0 0 0 #_35 index-PL ALL 4                 
+0 0 0 0 #_36 index-PS IDID_PHPH 5           
+0 0 0 0 #_37 index-PL JP 7                  
+0 0 0 0 #_38 index-PL ALL 8                 
+0 0 0 0 #_39 index-PS UNASSOC 6             
+0 0 0 0 #_40 index-PS UNASSOC 7             
+0 0 0 0 #_41 index-PS UNASSOC 8             
+#
+
+#_size_selex_patterns
+#_LO	HI	INIT	PRIOR	PR_SD	PR_type	PHASE	env_var.link	dev_link	dev_minyr	dev_maxyr	dev_PH	Block	Block_Fxn
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_1 SizeSel_Spline_Code_PL JP 1                            
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_2 SizeSel_Spline_GradLo_PL JP 1                          
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_3 SizeSel_Spline_GradHi_PL JP 1                          
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_4 SizeSel_Spline_Knot_1_PL JP 1                          
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_5 SizeSel_Spline_Knot_2_PL JP 1                          
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_6 SizeSel_Spline_Knot_3_PL JP 1                          
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_6 SizeSel_Spline_Knot_4_PL JP 1                          
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_7 SizeSel_Spline_Val_1_PL JP 1                           
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_8 SizeSel_Spline_Val_2_PL JP 1                           
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_9 SizeSel_Spline_Val_3_PL JP 1                           
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_9 SizeSel_Spline_Val_4_PL JP 1                           
+    0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_10 SizeSel_Spline_Code_PS ALL 1                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_11 SizeSel_Spline_GradLo_PS ALL 1                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_12 SizeSel_Spline_GradHi_PS ALL 1                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_13 SizeSel_Spline_Knot_1_PS ALL 1                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_14 SizeSel_Spline_Knot_2_PS ALL 1                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_15 SizeSel_Spline_Knot_3_PS ALL 1                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_15 SizeSel_Spline_Knot_4_PS ALL 1                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_16 SizeSel_Spline_Val_1_PS ALL 1                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_17 SizeSel_Spline_Val_2_PS ALL 1                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_18 SizeSel_Spline_Val_3_PS ALL 1                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_18 SizeSel_Spline_Val_4_PS ALL 1                         
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_19 SizeSel_Spline_Code_LL ALL 1                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_20 SizeSel_Spline_GradLo_LL ALL 1                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_21 SizeSel_Spline_GradHi_LL ALL 1                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_22 SizeSel_Spline_Knot_1_LL ALL 1                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_23 SizeSel_Spline_Knot_2_LL ALL 1                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_24 SizeSel_Spline_Knot_3_LL ALL 1                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_25 SizeSel_Spline_Val_1_LL ALL 1                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_26 SizeSel_Spline_Val_2_LL ALL 1                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_27 SizeSel_Spline_Val_3_LL ALL 1                         
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_28 SizeSel_Spline_Code_PL ALL 2                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_29 SizeSel_Spline_GradLo_PL ALL 2                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_30 SizeSel_Spline_GradHi_PL ALL 2                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_31 SizeSel_Spline_Knot_1_PL ALL 2                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_32 SizeSel_Spline_Knot_2_PL ALL 2                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_33 SizeSel_Spline_Knot_3_PL ALL 2                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_31 SizeSel_Spline_Knot_4_PL ALL 2                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_34 SizeSel_Spline_Val_1_PL ALL 2                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_35 SizeSel_Spline_Val_2_PL ALL 2                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_36 SizeSel_Spline_Val_3_PL ALL 2                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_34 SizeSel_Spline_Val_4_PL ALL 2                         
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_37 SizeSel_Spline_Code_PS ALL 2                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_38 SizeSel_Spline_GradLo_PS ALL 2                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_39 SizeSel_Spline_GradHi_PS ALL 2                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_40 SizeSel_Spline_Knot_1_PS ALL 2                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_41 SizeSel_Spline_Knot_2_PS ALL 2                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_42 SizeSel_Spline_Knot_3_PS ALL 2                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_41 SizeSel_Spline_Knot_4_PS ALL 2                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_43 SizeSel_Spline_Val_1_PS ALL 2                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_44 SizeSel_Spline_Val_2_PS ALL 2                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_45 SizeSel_Spline_Val_3_PS ALL 2                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_44 SizeSel_Spline_Val_4_PS ALL 2                         
+    0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_46 SizeSel_Spline_Code_LL ALL 2                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_47 SizeSel_Spline_GradLo_LL ALL 2                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_48 SizeSel_Spline_GradHi_LL ALL 2                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_49 SizeSel_Spline_Knot_1_LL ALL 2                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_50 SizeSel_Spline_Knot_2_LL ALL 2                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_51 SizeSel_Spline_Knot_3_LL ALL 2                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_52 SizeSel_Spline_Val_1_LL ALL 2                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_53 SizeSel_Spline_Val_2_LL ALL 2                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_54 SizeSel_Spline_Val_3_LL ALL 2                         
+    0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_55 SizeSel_Spline_Code_PL JP 3                           
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_56 SizeSel_Spline_GradLo_PL JP 3                         
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_57 SizeSel_Spline_GradHi_PL JP 3                         
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_58 SizeSel_Spline_Knot_1_PL JP 3                         
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_59 SizeSel_Spline_Knot_2_PL JP 3                         
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_60 SizeSel_Spline_Knot_3_PL JP 3                         
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_60 SizeSel_Spline_Knot_4_PL JP 3                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_61 SizeSel_Spline_Val_1_PL JP 3                          
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_62 SizeSel_Spline_Val_2_PL JP 3                          
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_63 SizeSel_Spline_Val_3_PL JP 3                          
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_63 SizeSel_Spline_Val_4_PL JP 3                          
+   0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_64 SizeSel_Spline_Code_PS ALL 3                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_65 SizeSel_Spline_GradLo_PS ALL 3                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_66 SizeSel_Spline_GradHi_PS ALL 3                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_67 SizeSel_Spline_Knot_1_PS ALL 3                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_68 SizeSel_Spline_Knot_2_PS ALL 3                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_69 SizeSel_Spline_Knot_3_PS ALL 3                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_69 SizeSel_Spline_Knot_4_PS ALL 3                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_70 SizeSel_Spline_Val_1_PS ALL 3                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_71 SizeSel_Spline_Val_2_PS ALL 3                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_72 SizeSel_Spline_Val_3_PS ALL 3                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_72 SizeSel_Spline_Val_4_PS ALL 3                         
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_73 SizeSel_Spline_Code_LL ALL 3                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_74 SizeSel_Spline_GradLo_LL ALL 3                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_75 SizeSel_Spline_GradHi_LL ALL 3                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_76 SizeSel_Spline_Knot_1_LL ALL 3                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_77 SizeSel_Spline_Knot_2_LL ALL 3                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_78 SizeSel_Spline_Knot_3_LL ALL 3                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_79 SizeSel_Spline_Val_1_LL ALL 3                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_80 SizeSel_Spline_Val_2_LL ALL 3                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_81 SizeSel_Spline_Val_3_LL ALL 3                         
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_82 SizeSel_Spline_Code_Dom PH 5                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_83 SizeSel_Spline_GradLo_Dom PH 5                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_84 SizeSel_Spline_GradHi_Dom PH 5                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_85 SizeSel_Spline_Knot_1_Dom PH 5                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_86 SizeSel_Spline_Knot_2_Dom PH 5                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_87 SizeSel_Spline_Knot_3_Dom PH 5                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_85 SizeSel_Spline_Knot_4_Dom PH 5                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_86 SizeSel_Spline_Knot_5_Dom PH 5                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_87 SizeSel_Spline_Knot_6_Dom PH 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_88 SizeSel_Spline_Val_1_Dom PH 5                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_89 SizeSel_Spline_Val_2_Dom PH 5                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_90 SizeSel_Spline_Val_3_Dom PH 5                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_88 SizeSel_Spline_Val_4_Dom PH 5                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_89 SizeSel_Spline_Val_5_Dom PH 5                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_90 SizeSel_Spline_Val_6_Dom PH 5                         
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_91 SizeSel_Spline_Code_Dom ID 5                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_92 SizeSel_Spline_GradLo_Dom ID 5                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_93 SizeSel_Spline_GradHi_Dom ID 5                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_94 SizeSel_Spline_Knot_1_Dom ID 5                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_95 SizeSel_Spline_Knot_2_Dom ID 5                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_96 SizeSel_Spline_Knot_3_Dom ID 5                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_95 SizeSel_Spline_Knot_4_Dom ID 5                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_96 SizeSel_Spline_Knot_5_Dom ID 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_97 SizeSel_Spline_Val_1_Dom ID 5                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_98 SizeSel_Spline_Val_2_Dom ID 5                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_99 SizeSel_Spline_Val_3_Dom ID 5                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_98 SizeSel_Spline_Val_4_Dom ID 5                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_99 SizeSel_Spline_Val_5_Dom ID 5                         
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_100 SizeSel_Spline_Code_IDID_PHPH 5                      
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_101 SizeSel_Spline_GradLo_IDID_PHPH 5                    
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_102 SizeSel_Spline_GradHi_IDID_PHPH 5                    
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_103 SizeSel_Spline_Knot_1_IDID_PHPH 5                    
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_104 SizeSel_Spline_Knot_2_IDID_PHPH 5                    
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_105 SizeSel_Spline_Knot_3_IDID_PHPH 5                    
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_104 SizeSel_Spline_Knot_4_IDID_PHPH 5                    
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_105 SizeSel_Spline_Knot_5_IDID_PHPH 5                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_106 SizeSel_Spline_Val_1_IDID_PHPH 5                     
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_107 SizeSel_Spline_Val_2_IDID_PHPH 5                     
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_108 SizeSel_Spline_Val_3_IDID_PHPH 5                     
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_107 SizeSel_Spline_Val_4_IDID_PHPH 5                     
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_108 SizeSel_Spline_Val_5_IDID_PHPH 5                     
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_109 SizeSel_Spline_Code_PL ALL 5                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_110 SizeSel_Spline_GradLo_PL ALL 5                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_111 SizeSel_Spline_GradHi_PL ALL 5                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_112 SizeSel_Spline_Knot_1_PL ALL 5                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_113 SizeSel_Spline_Knot_2_PL ALL 5                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_114 SizeSel_Spline_Knot_3_PL ALL 5                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_112 SizeSel_Spline_Knot_4_PL ALL 5                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_113 SizeSel_Spline_Knot_5_PL ALL 5                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_114 SizeSel_Spline_Knot_6_PL ALL 5                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_115 SizeSel_Spline_Val_1_PL ALL 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_116 SizeSel_Spline_Val_2_PL ALL 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_117 SizeSel_Spline_Val_3_PL ALL 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_115 SizeSel_Spline_Val_4_PL ALL 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_116 SizeSel_Spline_Val_5_PL ALL 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_117 SizeSel_Spline_Val_6_PL ALL 5                        
+   0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_118 SizeSel_Spline_Code_PS ASSOC_no(PHPH, IDID, VN) 5    
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_119 SizeSel_Spline_GradLo_PS ASSOC_no(PHPH, IDID, VN) 5  
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_120 SizeSel_Spline_GradHi_PS ASSOC_no(PHPH, IDID, VN) 5  
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_121 SizeSel_Spline_Knot_1_PS ASSOC_no(PHPH, IDID, VN) 5  
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_122 SizeSel_Spline_Knot_2_PS ASSOC_no(PHPH, IDID, VN) 5  
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_123 SizeSel_Spline_Knot_3_PS ASSOC_no(PHPH, IDID, VN) 5  
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_123 SizeSel_Spline_Knot_4_PS ASSOC_no(PHPH, IDID, VN) 5  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_124 SizeSel_Spline_Val_1_PS ASSOC_no(PHPH, IDID, VN) 5   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_125 SizeSel_Spline_Val_2_PS ASSOC_no(PHPH, IDID, VN) 5   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_126 SizeSel_Spline_Val_3_PS ASSOC_no(PHPH, IDID, VN) 5   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_126 SizeSel_Spline_Val_4_PS ASSOC_no(PHPH, IDID, VN) 5   
+   0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_127 SizeSel_Spline_Code_PS UNASSOC_no(PHPH, IDID, VN) 5  
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_128 SizeSel_Spline_GradLo_PS UNASSOC_no(PHPH, IDID, VN) 5
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_129 SizeSel_Spline_GradHi_PS UNASSOC_no(PHPH, IDID, VN) 5
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_130 SizeSel_Spline_Knot_1_PS UNASSOC_no(PHPH, IDID, VN) 5
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_131 SizeSel_Spline_Knot_2_PS UNASSOC_no(PHPH, IDID, VN) 5
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_132 SizeSel_Spline_Knot_3_PS UNASSOC_no(PHPH, IDID, VN) 5
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_132 SizeSel_Spline_Knot_4_PS UNASSOC_no(PHPH, IDID, VN) 5
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_133 SizeSel_Spline_Val_1_PS UNASSOC_no(PHPH, IDID, VN) 5 
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_134 SizeSel_Spline_Val_2_PS UNASSOC_no(PHPH, IDID, VN) 5 
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_135 SizeSel_Spline_Val_3_PS UNASSOC_no(PHPH, IDID, VN) 5 
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_135 SizeSel_Spline_Val_4_PS UNASSOC_no(PHPH, IDID, VN) 5     
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_136 SizeSel_Spline_Code_DOM VN 5                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_137 SizeSel_Spline_GradLo_DOM VN 5                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_138 SizeSel_Spline_GradHi_DOM VN 5                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_139 SizeSel_Spline_Knot_1_DOM VN 5                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_140 SizeSel_Spline_Knot_2_DOM VN 5                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_141 SizeSel_Spline_Knot_3_DOM VN 5                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_140 SizeSel_Spline_Knot_4_DOM VN 5                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_141 SizeSel_Spline_Knot_5_DOM VN 5                       
+  -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_142 SizeSel_Spline_Val_1_DOM VN 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_143 SizeSel_Spline_Val_2_DOM VN 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_144 SizeSel_Spline_Val_3_DOM VN 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_143 SizeSel_Spline_Val_4_DOM VN 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_144 SizeSel_Spline_Val_5_DOM VN 5                        
+    0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_145 SizeSel_Spline_Code_LL ALL 5                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_146 SizeSel_Spline_GradLo_LL ALL 5                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_147 SizeSel_Spline_GradHi_LL ALL 5                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_148 SizeSel_Spline_Knot_1_LL ALL 5                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_149 SizeSel_Spline_Knot_2_LL ALL 5                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_150 SizeSel_Spline_Knot_3_LL ALL 5                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_151 SizeSel_Spline_Val_1_LL ALL 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_152 SizeSel_Spline_Val_2_LL ALL 5                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_153 SizeSel_Spline_Val_3_LL ALL 5                        
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_154 SizeSel_Spline_Code_PL ALL 6                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_155 SizeSel_Spline_GradLo_PL ALL 6                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_156 SizeSel_Spline_GradHi_PL ALL 6                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_157 SizeSel_Spline_Knot_1_PL ALL 6                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_158 SizeSel_Spline_Knot_2_PL ALL 6                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_159 SizeSel_Spline_Knot_3_PL ALL 6                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_159 SizeSel_Spline_Knot_4_PL ALL 6                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_160 SizeSel_Spline_Val_1_PL ALL 6                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_161 SizeSel_Spline_Val_2_PL ALL 6                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_162 SizeSel_Spline_Val_3_PL ALL 6                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_162 SizeSel_Spline_Val_4_PL ALL 6                        
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_163 SizeSel_Spline_Code_PS ASSOC 6                       
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_164 SizeSel_Spline_GradLo_PS ASSOC 6                     
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_165 SizeSel_Spline_GradHi_PS ASSOC 6                     
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_166 SizeSel_Spline_Knot_1_PS ASSOC 6                     
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_167 SizeSel_Spline_Knot_2_PS ASSOC 6                     
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_168 SizeSel_Spline_Knot_3_PS ASSOC 6                     
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_168 SizeSel_Spline_Knot_4_PS ASSOC 6                     
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_169 SizeSel_Spline_Val_1_PS ASSOC 6                      
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_170 SizeSel_Spline_Val_2_PS ASSOC 6                      
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_171 SizeSel_Spline_Val_3_PS ASSOC 6                      
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_171 SizeSel_Spline_Val_4_PS ASSOC 6                      
+    0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_172 SizeSel_Spline_Code_PS UNASSOC 6                     
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_173 SizeSel_Spline_GradLo_PS UNASSOC 6                   
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_174 SizeSel_Spline_GradHi_PS UNASSOC 6                   
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_175 SizeSel_Spline_Knot_1_PS UNASSOC 6                   
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_176 SizeSel_Spline_Knot_2_PS UNASSOC 6                   
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_177 SizeSel_Spline_Knot_3_PS UNASSOC 6                   
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_177 SizeSel_Spline_Knot_4_PS UNASSOC 6                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_178 SizeSel_Spline_Val_1_PS UNASSOC 6                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_179 SizeSel_Spline_Val_2_PS UNASSOC 6                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_180 SizeSel_Spline_Val_3_PS UNASSOC 6                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_180 SizeSel_Spline_Val_4_PS UNASSOC 6                    
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_181 SizeSel_Spline_Code_LL ALL 6                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_182 SizeSel_Spline_GradLo_LL ALL 6                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_183 SizeSel_Spline_GradHi_LL ALL 6                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_184 SizeSel_Spline_Knot_1_LL ALL 6                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_185 SizeSel_Spline_Knot_2_LL ALL 6                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_186 SizeSel_Spline_Knot_3_LL ALL 6                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_187 SizeSel_Spline_Val_1_LL ALL 6                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_188 SizeSel_Spline_Val_2_LL ALL 6                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_189 SizeSel_Spline_Val_3_LL ALL 6                        
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_190 SizeSel_Spline_Code_PL ALL 4                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_191 SizeSel_Spline_GradLo_PL ALL 4                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_192 SizeSel_Spline_GradHi_PL ALL 4                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_193 SizeSel_Spline_Knot_1_PL ALL 4                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_194 SizeSel_Spline_Knot_2_PL ALL 4                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_195 SizeSel_Spline_Knot_3_PL ALL 4                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_195 SizeSel_Spline_Knot_4_PL ALL 4                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_196 SizeSel_Spline_Val_1_PL ALL 4                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_197 SizeSel_Spline_Val_2_PL ALL 4                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_198 SizeSel_Spline_Val_3_PL ALL 4                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_198 SizeSel_Spline_Val_4_PL ALL 4                        
+    0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_199 SizeSel_Spline_Code_LL ALL 4                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_200 SizeSel_Spline_GradLo_LL ALL 4                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_201 SizeSel_Spline_GradHi_LL ALL 4                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_202 SizeSel_Spline_Knot_1_LL ALL 4                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_203 SizeSel_Spline_Knot_2_LL ALL 4                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_204 SizeSel_Spline_Knot_3_LL ALL 4                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_205 SizeSel_Spline_Val_1_LL ALL 4                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_206 SizeSel_Spline_Val_2_LL ALL 4                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_207 SizeSel_Spline_Val_3_LL ALL 4                        
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_208 SizeSel_Spline_Code_PL JP 7                          
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_209 SizeSel_Spline_GradLo_PL JP 7                        
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_210 SizeSel_Spline_GradHi_PL JP 7                        
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_211 SizeSel_Spline_Knot_1_PL JP 7                        
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_212 SizeSel_Spline_Knot_2_PL JP 7                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_213 SizeSel_Spline_Knot_3_PL JP 7                        
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_213 SizeSel_Spline_Knot_4_PL JP 7                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_214 SizeSel_Spline_Val_1_PL JP 7                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_215 SizeSel_Spline_Val_2_PL JP 7                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_216 SizeSel_Spline_Val_3_PL JP 7                         
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_216 SizeSel_Spline_Val_4_PL JP 7                         
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_217 SizeSel_Spline_Code_PS ASSOC 7                       
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_218 SizeSel_Spline_GradLo_PS ASSOC 7                     
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_219 SizeSel_Spline_GradHi_PS ASSOC 7                     
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_220 SizeSel_Spline_Knot_1_PS ASSOC 7                     
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_221 SizeSel_Spline_Knot_2_PS ASSOC 7                     
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_222 SizeSel_Spline_Knot_3_PS ASSOC 7                     
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_222 SizeSel_Spline_Knot_4_PS ASSOC 7                     
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_223 SizeSel_Spline_Val_1_PS ASSOC 7                      
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_224 SizeSel_Spline_Val_2_PS ASSOC 7                      
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_225 SizeSel_Spline_Val_3_PS ASSOC 7                      
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_225 SizeSel_Spline_Val_4_PS ASSOC 7                      
+    0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_226 SizeSel_Spline_Code_PS UNASSOC 7                     
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_227 SizeSel_Spline_GradLo_PS UNASSOC 7                   
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_228 SizeSel_Spline_GradHi_PS UNASSOC 7                   
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_229 SizeSel_Spline_Knot_1_PS UNASSOC 7                   
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_230 SizeSel_Spline_Knot_2_PS UNASSOC 7                   
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_231 SizeSel_Spline_Knot_3_PS UNASSOC 7                   
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_231 SizeSel_Spline_Knot_4_PS UNASSOC 7                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_232 SizeSel_Spline_Val_1_PS UNASSOC 7                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_233 SizeSel_Spline_Val_2_PS UNASSOC 7                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_234 SizeSel_Spline_Val_3_PS UNASSOC 7                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_234 SizeSel_Spline_Val_4_PS UNASSOC 7                    
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_235 SizeSel_Spline_Code_LL ALL 7                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_236 SizeSel_Spline_GradLo_LL ALL 7                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_237 SizeSel_Spline_GradHi_LL ALL 7                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_238 SizeSel_Spline_Knot_1_LL ALL 7                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_239 SizeSel_Spline_Knot_2_LL ALL 7                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_240 SizeSel_Spline_Knot_3_LL ALL 7                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_241 SizeSel_Spline_Val_1_LL ALL 7                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_242 SizeSel_Spline_Val_2_LL ALL 7                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_243 SizeSel_Spline_Val_3_LL ALL 7                        
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_244 SizeSel_Spline_Code_PL All 8                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_245 SizeSel_Spline_GradLo_PL All 8                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_246 SizeSel_Spline_GradHi_PL All 8                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_247 SizeSel_Spline_Knot_1_PL All 8                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_248 SizeSel_Spline_Knot_2_PL All 8                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_249 SizeSel_Spline_Knot_3_PL All 8                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_249 SizeSel_Spline_Knot_4_PL All 8                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_250 SizeSel_Spline_Val_1_PL All 8                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_251 SizeSel_Spline_Val_2_PL All 8                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_252 SizeSel_Spline_Val_3_PL All 8                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_252 SizeSel_Spline_Val_4_PL All 8                        
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_253 SizeSel_Spline_Code_PS ASSOC 8                       
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_254 SizeSel_Spline_GradLo_PS ASSOC 8                     
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_255 SizeSel_Spline_GradHi_PS ASSOC 8                     
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_256 SizeSel_Spline_Knot_1_PS ASSOC 8                     
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_257 SizeSel_Spline_Knot_2_PS ASSOC 8                     
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_258 SizeSel_Spline_Knot_3_PS ASSOC 8                     
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_258 SizeSel_Spline_Knot_4_PS ASSOC 8                     
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_259 SizeSel_Spline_Val_1_PS ASSOC 8                      
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_260 SizeSel_Spline_Val_2_PS ASSOC 8                      
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_261 SizeSel_Spline_Val_3_PS ASSOC 8                      
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_261 SizeSel_Spline_Val_4_PS ASSOC 8                      
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_262 SizeSel_Spline_Code_PS UNASSOC 8                     
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_263 SizeSel_Spline_GradLo_PS UNASSOC 8                   
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_264 SizeSel_Spline_GradHi_PS UNASSOC 8                   
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_265 SizeSel_Spline_Knot_1_PS UNASSOC 8                   
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_266 SizeSel_Spline_Knot_2_PS UNASSOC 8                   
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_267 SizeSel_Spline_Knot_3_PS UNASSOC 8                   
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_267 SizeSel_Spline_Knot_4_PS UNASSOC 8                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_268 SizeSel_Spline_Val_1_PS UNASSOC 8                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_269 SizeSel_Spline_Val_2_PS UNASSOC 8                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_270 SizeSel_Spline_Val_3_PS UNASSOC 8                    
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_270 SizeSel_Spline_Val_4_PS UNASSOC 8                    
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_271 SizeSel_Spline_Code_LL ALL 8                         
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_272 SizeSel_Spline_GradLo_LL ALL 8                       
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_273 SizeSel_Spline_GradHi_LL ALL 8                       
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_274 SizeSel_Spline_Knot_1_LL ALL 8                       
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_275 SizeSel_Spline_Knot_2_LL ALL 8                       
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_276 SizeSel_Spline_Knot_3_LL ALL 8                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_277 SizeSel_Spline_Val_1_LL ALL 8                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_278 SizeSel_Spline_Val_2_LL ALL 8                        
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_279 SizeSel_Spline_Val_3_LL ALL 8                        
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_280 SizeSel_Spline_Code_index-PL JP 1                    
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_281 SizeSel_Spline_GradLo_index-PL JP 1                  
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_282 SizeSel_Spline_GradHi_index-PL JP 1                  
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_283 SizeSel_Spline_Knot_1_index-PL JP 1                  
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_284 SizeSel_Spline_Knot_2_index-PL JP 1                  
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_285 SizeSel_Spline_Knot_3_index-PL JP 1                  
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_285 SizeSel_Spline_Knot_4_index-PL JP 1                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_286 SizeSel_Spline_Val_1_index-PL JP 1                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_287 SizeSel_Spline_Val_2_index-PL JP 1                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_288 SizeSel_Spline_Val_3_index-PL JP 1                       
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_288 SizeSel_Spline_Val_4_index-PL JP 1                   
+    0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_289 SizeSel_Spline_Code_index-PL ALL 2                   
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_290 SizeSel_Spline_GradLo_index-PL ALL 2                 
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_291 SizeSel_Spline_GradHi_index-PL ALL 2                 
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_292 SizeSel_Spline_Knot_1_index-PL ALL 2                 
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_293 SizeSel_Spline_Knot_2_index-PL ALL 2                 
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_294 SizeSel_Spline_Knot_3_index-PL ALL 2                 
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_294 SizeSel_Spline_Knot_4_index-PL ALL 2                 
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_295 SizeSel_Spline_Val_1_index-PL ALL 2                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_296 SizeSel_Spline_Val_2_index-PL ALL 2                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_297 SizeSel_Spline_Val_3_index-PL ALL 2                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_297 SizeSel_Spline_Val_4_index-PL ALL 2                  
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_298 SizeSel_Spline_Code_index-PL JP 3                    
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_299 SizeSel_Spline_GradLo_index-PL JP 3                  
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_300 SizeSel_Spline_GradHi_index-PL JP 3                  
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_301 SizeSel_Spline_Knot_1_index-PL JP 3                  
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_302 SizeSel_Spline_Knot_2_index-PL JP 3                  
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_303 SizeSel_Spline_Knot_3_index-PL JP 3                  
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_303 SizeSel_Spline_Knot_4_index-PL JP 3                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_304 SizeSel_Spline_Val_1_index-PL JP 3                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_305 SizeSel_Spline_Val_2_index-PL JP 3                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_306 SizeSel_Spline_Val_3_index-PL JP 3                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_306 SizeSel_Spline_Val_4_index-PL JP 3                   
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_307 SizeSel_Spline_Code_index-PL ALL 4                   
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_308 SizeSel_Spline_GradLo_index-PL ALL 4                 
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_309 SizeSel_Spline_GradHi_index-PL ALL 4                 
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_310 SizeSel_Spline_Knot_1_index-PL ALL 4                 
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_311 SizeSel_Spline_Knot_2_index-PL ALL 4                 
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_312 SizeSel_Spline_Knot_3_index-PL ALL 4                 
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_312 SizeSel_Spline_Knot_4_index-PL ALL 4                 
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_313 SizeSel_Spline_Val_1_index-PL ALL 4                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_314 SizeSel_Spline_Val_2_index-PL ALL 4                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_315 SizeSel_Spline_Val_3_index-PL ALL 4                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_315 SizeSel_Spline_Val_4_index-PL ALL 4                  
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_316 SizeSel_Spline_Code_index-PS IDID_PHPH 5             
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_317 SizeSel_Spline_GradLo_index-PS IDID_PHPH 5           
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_318 SizeSel_Spline_GradHi_index-PS IDID_PHPH 5           
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_319 SizeSel_Spline_Knot_1_index-PS IDID_PHPH 5           
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_320 SizeSel_Spline_Knot_2_index-PS IDID_PHPH 5           
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_321 SizeSel_Spline_Knot_3_index-PS IDID_PHPH 5           
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_320 SizeSel_Spline_Knot_4_index-PS IDID_PHPH 5           
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_321 SizeSel_Spline_Knot_5_index-PS IDID_PHPH 5           
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_322 SizeSel_Spline_Val_1_index-PS IDID_PHPH 5            
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_323 SizeSel_Spline_Val_2_index-PS IDID_PHPH 5            
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_324 SizeSel_Spline_Val_3_index-PS IDID_PHPH 5            
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_323 SizeSel_Spline_Val_4_index-PS IDID_PHPH 5            
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_324 SizeSel_Spline_Val_5_index-PS IDID_PHPH 5            
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_325 SizeSel_Spline_Code_index-PL JP 7                    
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_326 SizeSel_Spline_GradLo_index-PL JP 7                  
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_327 SizeSel_Spline_GradHi_index-PL JP 7                  
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_328 SizeSel_Spline_Knot_1_index-PL JP 7                  
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_329 SizeSel_Spline_Knot_2_index-PL JP 7                  
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_330 SizeSel_Spline_Knot_3_index-PL JP 7                  
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_330 SizeSel_Spline_Knot_4_index-PL JP 7                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_331 SizeSel_Spline_Val_1_index-PL JP 7                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_332 SizeSel_Spline_Val_2_index-PL JP 7                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_333 SizeSel_Spline_Val_3_index-PL JP 7                   
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_333 SizeSel_Spline_Val_4_index-PL JP 7                   
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_334 SizeSel_Spline_Code_index-PL ALL 8                   
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_335 SizeSel_Spline_GradLo_index-PL ALL 8                 
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_336 SizeSel_Spline_GradHi_index-PL ALL 8                 
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_337 SizeSel_Spline_Knot_1_index-PL ALL 8                 
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_338 SizeSel_Spline_Knot_2_index-PL ALL 8                 
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_339 SizeSel_Spline_Knot_3_index-PL ALL 8                 
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_339 SizeSel_Spline_Knot_4_index-PL ALL 8                 
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_340 SizeSel_Spline_Val_1_index-PL ALL 8                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_341 SizeSel_Spline_Val_2_index-PL ALL 8                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_342 SizeSel_Spline_Val_3_index-PL ALL 8                  
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_342 SizeSel_Spline_Val_4_index-PL ALL 8                  
+    0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_343 SizeSel_Spline_Code_index-PS UNASSOC 6               
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_344 SizeSel_Spline_GradLo_index-PS UNASSOC 6             
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_345 SizeSel_Spline_GradHi_index-PS UNASSOC 6             
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_346 SizeSel_Spline_Knot_1_index-PS UNASSOC 6             
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_347 SizeSel_Spline_Knot_2_index-PS UNASSOC 6             
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_348 SizeSel_Spline_Knot_3_index-PS UNASSOC 6             
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_348 SizeSel_Spline_Knot_4_index-PS UNASSOC 6             
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_349 SizeSel_Spline_Val_1_index-PS UNASSOC 6              
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_350 SizeSel_Spline_Val_2_index-PS UNASSOC 6              
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_351 SizeSel_Spline_Val_3_index-PS UNASSOC 6              
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_351 SizeSel_Spline_Val_4_index-PS UNASSOC 6              
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_352 SizeSel_Spline_Code_index-PS UNASSOC 7               
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_353 SizeSel_Spline_GradLo_index-PS UNASSOC 7             
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_354 SizeSel_Spline_GradHi_index-PS UNASSOC 7             
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_355 SizeSel_Spline_Knot_1_index-PS UNASSOC 7             
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_356 SizeSel_Spline_Knot_2_index-PS UNASSOC 7             
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_357 SizeSel_Spline_Knot_3_index-PS UNASSOC 7             
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_357 SizeSel_Spline_Knot_4_index-PS UNASSOC 7             
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_358 SizeSel_Spline_Val_1_index-PS UNASSOC 7              
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_359 SizeSel_Spline_Val_2_index-PS UNASSOC 7              
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_360 SizeSel_Spline_Val_3_index-PS UNASSOC 7              
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_360 SizeSel_Spline_Val_4_index-PS UNASSOC 7              
+     0	    2	    2	 0	    0	-1	-99	0	0	0	0	0	0	0	#_361 SizeSel_Spline_Code_index-PS UNASSOC 8               
+-0.001	    1	  0.1	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_362 SizeSel_Spline_GradLo_index-PS UNASSOC 8             
+    -1	0.001	-0.03	 0	0.001	-1	  3	0	0	0	0	0	0	0	#_363 SizeSel_Spline_GradHi_index-PS UNASSOC 8             
+     2	  108	   28	54	    1	 0	-99	0	0	0	0	0	0	0	#_364 SizeSel_Spline_Knot_1_index-PS UNASSOC 8             
+     2	  108	   54	54	    1	 0	-99	0	0	0	0	0	0	0	#_365 SizeSel_Spline_Knot_2_index-PS UNASSOC 8             
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_366 SizeSel_Spline_Knot_3_index-PS UNASSOC 8             
+     2	  108	   80	54	    1	 0	-99	0	0	0	0	0	0	0	#_366 SizeSel_Spline_Knot_4_index-PS UNASSOC 8             
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_367 SizeSel_Spline_Val_1_index-PS UNASSOC 8              
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_368 SizeSel_Spline_Val_2_index-PS UNASSOC 8              
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_369 SizeSel_Spline_Val_3_index-PS UNASSOC 8              
+   -16	    8	   -1	 0	    0	-1	  2	0	0	0	0	0	0	0	#_369 SizeSel_Spline_Val_4_index-PS UNASSOC 8   
+
+#
+
+#_No age_selex_parm
+#_no timevary selex parameters
+#
+0 #  use 2D_AR1 selectivity(0/1):  experimental feature
+#_no 2D_AR1 selex offset used
+# Tag loss and Tag reporting parameters go next
+1 # TG_custom:  0=no read; 1=read if tags exist
+#_LO	HI	INIT	PRIOR	PR_SD	PR_type	PHASE	env_var&link	dev_link	dev_minyr	dev_maxyr	dev_PH	Block	Block_Fxn
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_3   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_4   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_5   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_6   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_7   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_8   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_9   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_10  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_11  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_12  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_13  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_14  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_15  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_16  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_17  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_18  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_19  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_20  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_21  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_22  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_23  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_24  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_25  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_26  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_27  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_28  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_29  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_30  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_31  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_32  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_33  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_34  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_35  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_36  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_37  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_38  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_39  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_40  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_41  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_42  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_43  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_44  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_45  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_46  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_47  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_48  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_49  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_50  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_51  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_52  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_53  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_54  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_55  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_56  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_57  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_58  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_59  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_60  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_61  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_62  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_63  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_64  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_65  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_66  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_67  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_68  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_69  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_70  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_71  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_72  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_73  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_74  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_75  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_76  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_77  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_78  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_79  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_80  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_81  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_82  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_83  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_84  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_85  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_86  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_87  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_88  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_89  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_90  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_91  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_92  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_93  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_94  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_95  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_96  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_97  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_98  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_99  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_100 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_101 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_102 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_103 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_104 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_105 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_106 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_107 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_108 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_109 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_110 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_111 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_112 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_113 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_114 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_115 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_116 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_117 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_118 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_119 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_120 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_121 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_122 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_123 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_124 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_125 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_126 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_127 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_128 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_129 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_130 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_131 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_132 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_133 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_134 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_135 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_136 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_137 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_138 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_139 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_140 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_141 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_142 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_143 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_144 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_145 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_146 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_147 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_148 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_149 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_150 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_151 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_152 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_153 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_154 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_155 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_156 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_157 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_158 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_159 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_160 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_161 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_162 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_163 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_164 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_165 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_166 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_167 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_168 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_169 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_170 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_171 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_172 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_173 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_174 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_175 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_176 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_177 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_178 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_179 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_180 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_181 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_182 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_183 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_184 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_185 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_186 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_187 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_188 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_189 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_190 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_191 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_192 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_193 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_194 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_195 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_196 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_197 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_198 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_199 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_200 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_201 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_202 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_203 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_204 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_205 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_206 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_207 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_208 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_209 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_210 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_211 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_212 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_213 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_214 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_215 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_216 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_217 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_218 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_219 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_220 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_221 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_222 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_223 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_224 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_225 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_226 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_227 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_228 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_229 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_230 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_231 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_232 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_233 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_234 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_235 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_236 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_237 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_238 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_239 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_240 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_241 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_242 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_243 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_244 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_245 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_246 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_247 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_248 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_249 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_250 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_251 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_252 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_253 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_254 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_255 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_256 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_257 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_258 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_259 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_260 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_261 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_262 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_263 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_264 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_265 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_266 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_267 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_268 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_269 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_270 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_271 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_272 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_273 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_274 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_275 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_276 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_277 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_278 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_279 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_280 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_281 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_282 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_283 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_284 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_285 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_286 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_287 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_288 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_289 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_290 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_291 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_292 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_293 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_294 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_295 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_296 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_297 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_298 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_299 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_300 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_301 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_302 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_303 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_304 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_305 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_306 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_307 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_308 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_309 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_310 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_311 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_312 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_313 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_314 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_315 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_316 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_317 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_318 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_319 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_320 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_321 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_322 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_323 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_324 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_325 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_326 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_327 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_328 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_329 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_330 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_331 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_332 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_333 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_334 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_335 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_336 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_337 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_338 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_339 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_340 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_341 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_342 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_343 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_344 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_345 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_346 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_347 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_348 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_349 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_350 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_351 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_352 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_353 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_354 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_355 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_356 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_357 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_358 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_359 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_360 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_361 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_362 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_363 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_364 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_365 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_366 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_367 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_368 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_369 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_370 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_371 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_372 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_373 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_374 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_375 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_376 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_377 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_378 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_379 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_380 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_381 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_382 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_383 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_384 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_385 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_386 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_387 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_388 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_389 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_390 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_391 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_392 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_393 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_394 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_395 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_396 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_397 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_398 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_399 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_400 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_401 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_402 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_403 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_404 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_405 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_406 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_407 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_408 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_409 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_410 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_411 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_412 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_413 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_414 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_415 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_416 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_417 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_418 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_419 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_420 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_421 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_422 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_423 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_424 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_425 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_426 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_427 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_428 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_429 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_430 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_431 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_432 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_433 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_434 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_435 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_436 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_437 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_438 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_439 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_440 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_441 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_442 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_443 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_444 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_445 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_446 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_447 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_448 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_449 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_450 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_451 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_452 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_453 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_454 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_455 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_456 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_457 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_458 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_459 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_460 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_461 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_462 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_463 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_464 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_465 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_466 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_467 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_468 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_469 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_470 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_471 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_472 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_473 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_474 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_475 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_476 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_477 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_478 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_479 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_480 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_481 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_482 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_483 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_484 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_485 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_486 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_487 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_488 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_489 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_490 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_491 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_492 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_493 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_494 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_495 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_496 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_497 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_498 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_499 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_500 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_501 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_502 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_503 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_504 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_505 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_506 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_507 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_508 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_509 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_510 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_511 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_512 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_513 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_514 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_515 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_516 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_517 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_518 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_519 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_520 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_521 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_522 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_523 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_524 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_525 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_526 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_527 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_528 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_529 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_530 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_531 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_532 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_533 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_534 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_535 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_536 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_537 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_538 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_539 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_540 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_541 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_542 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_543 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_544 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_545 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_546 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_547 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_548 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_549 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_550 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_551 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_552 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_553 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_554 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_555 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_556 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_557 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_558 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_559 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_560 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_561 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_562 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_563 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_564 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_565 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_566 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_567 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_568 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_569 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_570 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_571 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_572 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_573 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_574 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_575 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_576 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_577 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_578 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_579 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_580 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_581 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_582 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_583 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_584 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_585 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_586 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_587 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_588 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_589 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_590 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_591 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_592 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_593 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_594 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_595 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_596 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_597 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_598 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_599 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_600 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_601 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_602 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_603 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_604 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_605 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_606 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_607 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_608 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_609 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_610 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_611 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_612 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_613 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_614 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_615 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_616 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_617 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_618 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_619 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_620 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_621 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_622 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_623 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_624 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_625 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_626 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_627 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_628 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_629 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_630 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_631 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_632 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_633 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_634 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_635 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_636 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_637 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_638 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_639 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_640 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_641 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_642 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_643 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_644 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_645 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_646 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_647 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_648 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_649 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_650 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_651 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_652 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_653 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_654 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_655 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_656 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_657 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_658 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_659 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_660 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_661 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_662 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_663 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_664 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_665 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_666 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_667 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_668 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_669 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_670 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_671 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_672 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_673 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_674 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_675 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_676 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_677 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_678 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_679 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_680 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_681 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_682 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_683 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_684 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_685 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_686 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_687 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_688 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_689 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_690 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_691 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_692 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_693 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_694 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_695 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_696 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_697 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_698 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_699 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_700 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_701 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_702 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_703 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_704 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_705 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_706 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_707 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_708 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_709 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_710 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_711 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_712 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_713 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_714 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_715 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_716 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_717 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_718 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_719 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_720 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_721 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_722 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_723 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_724 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_725 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_726 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_727 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_728 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_729 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_730 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_731 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_732 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_733 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_734 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_735 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_736 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_737 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_738 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_739 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_740 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_741 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_742 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_743 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_744 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_745 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_746 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_747 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_748 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_749 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_750 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_751 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_752 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_753 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_754 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_755 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_756 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_757 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_758 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_759 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_760 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_761 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_762 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_763 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_764 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_765 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_766 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_767 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_768 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_769 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_770 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_771 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_772 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_773 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_774 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_775 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_776 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_777 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_778 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_779 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_780 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_781 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_782 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_783 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_784 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_785 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_786 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_787 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_788 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_789 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_790 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_791 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_792 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_793 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_794 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_795 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_796 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_797 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_798 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_799 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_800 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_801 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_802 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_803 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_804 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_805 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_806 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_807 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_808 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_809 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_810 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_811 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_812 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_813 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_814 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_815 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_816 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_817 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_818 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_819 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_820 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_821 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_822 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_823 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_824 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_825 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_826 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_827 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_828 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_829 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_830 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_831 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_832 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_833 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_834 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_835 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_836 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_837 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_838 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_839 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_840 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_841 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_842 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_843 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_844 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_845 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_846 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_847 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_848 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_849 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_850 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_851 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_852 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_853 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_854 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_855 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_856 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_857 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_858 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_859 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_860 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_861 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_862 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_863 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_864 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_865 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_866 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_867 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_868 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_869 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_870 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_871 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_872 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_873 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_874 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_875 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_876 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_877 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_878 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_879 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_880 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_881 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_882 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_883 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_884 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_885 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_886 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_887 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_888 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_889 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_890 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_891 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_892 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_893 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_894 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_895 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_896 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_897 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_898 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_899 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_900 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_901 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_902 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_903 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_904 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_905 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_906 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_907 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_908 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_909 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_910 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_911 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_912 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_913 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_914 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_915 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_916 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_917 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_918 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_919 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_920 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_921 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_922 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_923 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_924 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_925 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_926 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_927 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_928 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_929 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_930 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_931 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_932 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_933 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_934 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_935 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_936 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_937 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_938 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_939 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_940 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_941 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_942 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_943 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_944 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_945 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_946 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_947 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_948 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_949 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_950 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_951 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_952 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_953 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_954 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_955 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_956 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_957 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_958 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_959 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_960 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_961 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_962 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_963 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_964 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_965 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_966 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_967 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_968 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_969 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_970 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_971 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_972 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_973 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_974 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_975 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_976 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_977 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_978 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_979 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_980 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_981 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_982 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_983 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_984 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_985 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_986 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_987 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_988 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_989 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_990 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_991 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_992 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_993 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_994 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_995 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_996 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_997 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_998 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_999 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1000
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1001
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1002
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1003
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1004
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1005
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1006
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1007
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1008
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1009
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1010
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1011
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1012
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1013
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1014
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1015
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1016
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1017
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1018
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1019
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1020
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1021
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1022
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1023
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1024
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1025
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1026
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1027
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1028
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1029
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1030
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1031
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1032
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1033
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1034
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1035
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1036
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1037
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1038
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1039
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1040
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1041
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1042
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1043
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1044
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1045
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1046
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1047
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1048
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1049
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1050
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1051
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1052
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1053
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1054
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1055
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1056
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1057
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1058
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1059
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1060
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1061
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1062
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1063
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1064
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1065
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1066
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1067
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1068
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1069
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1070
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1071
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1072
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1073
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1074
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1075
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1076
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1077
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1078
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1079
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1080
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1081
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1082
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1083
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1084
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1085
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1086
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1087
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1088
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1089
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1090
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1091
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1092
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1093
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1094
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1095
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1096
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1097
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1098
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1099
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1100
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1101
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1102
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1103
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1104
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1105
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1106
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1107
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1108
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1109
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1110
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1111
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1112
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1113
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1114
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1115
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1116
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1117
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1118
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1119
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1120
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1121
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1122
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1123
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1124
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1125
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1126
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1127
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1128
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1129
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1130
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1131
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1132
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1133
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1134
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1135
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1136
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1137
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1138
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1139
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1140
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1141
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1142
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1143
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1144
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1145
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1146
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1147
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1148
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1149
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1150
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1151
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1152
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1153
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1154
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1155
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1156
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1157
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1158
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1159
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1160
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1161
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1162
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1163
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1164
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1165
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1166
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1167
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1168
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1169
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1170
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1171
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1172
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1173
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1174
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1175
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1176
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1177
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1178
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1179
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1180
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1181
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1182
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1183
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1184
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1185
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1186
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1187
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1188
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1189
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1190
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1191
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1192
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1193
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1194
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1195
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1196
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1197
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1198
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1199
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1200
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1201
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1202
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1203
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1204
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1205
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1206
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1207
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1208
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1209
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1210
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1211
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1212
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1213
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1214
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1215
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1216
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1217
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1218
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1219
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1220
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1221
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1222
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1223
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1224
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1225
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1226
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1227
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1228
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1229
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1230
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1231
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1232
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1233
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1234
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1235
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1236
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1237
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1238
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1239
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1240
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1241
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1242
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1243
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1244
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1245
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1246
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1247
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1248
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1249
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1250
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1251
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1252
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1253
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1254
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1255
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1256
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1257
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1258
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1259
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1260
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1261
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1262
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1263
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1264
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1265
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1266
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1267
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1268
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1269
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1270
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1271
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1272
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1273
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1274
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1275
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1276
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1277
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1278
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1279
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1280
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1281
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1282
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1283
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1284
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1285
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1286
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1287
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1288
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1289
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1290
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1291
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1292
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1293
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1294
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1295
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1296
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1297
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1298
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1299
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1300
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1301
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1302
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1303
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1304
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1305
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1306
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1307
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1308
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1309
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1310
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1311
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1312
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1313
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1314
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1315
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1316
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1317
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1318
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1319
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1320
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1321
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1322
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1323
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1324
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1325
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1326
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1327
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1328
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1329
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1330
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1331
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1332
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1333
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1334
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1335
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1336
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1337
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1338
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1339
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1340
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1341
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1342
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1343
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1344
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1345
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1346
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1347
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1348
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1349
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1350
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1351
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1352
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1353
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1354
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1355
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1356
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1357
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1358
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1359
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1360
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1361
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1362
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1363
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1364
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1365
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1366
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1367
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1368
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1369
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1370
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1371
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1372
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1373
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1374
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1375
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1376
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1377
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1378
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1379
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1380
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1381
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1382
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1383
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1384
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1385
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1386
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1387
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1388
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1389
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1390
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1391
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1392
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1393
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1394
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1395
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1396
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1397
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1398
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1399
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1400
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1401
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1402
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1403
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1404
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1405
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1406
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1407
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1408
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1409
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1410
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1411
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1412
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1413
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1414
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1415
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1416
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1417
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1418
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1419
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1420
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1421
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1422
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1423
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1424
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1425
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1426
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1427
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1428
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1429
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1430
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1431
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1432
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1433
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1434
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1435
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1436
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1437
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1438
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1439
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1440
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1441
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1442
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1443
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1444
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1445
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1446
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1447
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1448
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1449
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1450
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1451
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1452
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1453
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1454
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1455
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1456
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1457
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1458
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1459
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1460
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1461
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1462
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1463
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1464
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1465
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1466
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1467
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1468
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1469
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1470
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1471
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1472
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1473
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1474
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1475
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1476
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1477
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1478
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1479
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1480
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1481
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1482
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1483
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1484
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1485
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1486
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1487
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1488
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1489
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1490
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1491
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1492
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1493
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1494
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1495
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1496
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1497
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1498
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1499
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1500
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1501
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1502
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1503
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1504
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1505
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1506
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1507
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1508
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1509
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1510
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1511
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1512
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1513
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1514
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1515
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1516
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1517
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1518
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1519
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1520
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1521
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1522
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1523
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1524
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1525
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1526
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1527
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1528
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1529
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1530
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1531
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1532
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1533
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1534
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1535
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1536
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1537
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1538
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1539
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1540
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1541
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1542
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1543
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1544
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1545
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1546
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1547
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1548
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1549
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1550
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1551
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1552
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1553
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1554
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1555
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1556
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1557
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1558
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1559
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1560
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1561
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1562
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1563
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1564
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1565
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1566
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1567
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1568
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1569
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1570
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1571
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1572
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1573
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1574
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1575
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1576
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1577
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1578
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1579
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1580
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1581
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1582
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1583
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1584
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1585
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1586
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1587
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1588
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1589
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1590
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1591
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1592
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1593
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1594
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1595
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1596
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1597
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1598
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1599
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1600
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1601
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1602
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1603
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1604
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1605
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1606
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1607
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1608
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1609
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1610
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1611
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1612
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1613
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1614
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1615
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1616
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1617
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1618
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1619
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1620
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1621
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1622
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1623
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1624
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1625
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1626
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1627
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1628
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1629
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1630
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1631
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1632
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1633
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1634
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1635
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1636
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1637
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1638
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1639
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1640
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1641
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1642
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1643
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1644
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1645
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1646
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1647
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1648
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1649
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1650
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1651
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1652
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1653
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1654
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1655
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1656
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1657
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1658
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1659
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1660
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1661
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1662
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1663
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1664
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1665
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1666
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1667
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1668
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1669
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1670
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1671
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1672
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1673
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1674
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1675
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1676
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1677
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1678
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1679
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1680
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1681
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1682
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1683
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1684
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1685
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1686
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1687
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1688
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1689
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1690
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1691
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1692
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1693
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1694
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1695
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1696
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1697
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1698
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1699
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1700
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1701
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1702
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1703
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1704
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1705
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1706
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1707
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1708
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1709
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1710
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1711
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1712
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1713
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1714
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1715
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1716
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1717
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1718
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1719
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1720
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1721
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1722
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1723
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1724
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1725
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1726
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1727
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1728
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1729
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1730
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1731
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1732
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1733
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1734
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1735
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1736
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1737
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1738
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1739
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1740
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1741
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1742
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1743
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1744
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1745
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1746
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1747
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1748
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1749
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1750
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1751
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1752
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1753
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1754
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1755
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1756
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1757
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1758
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1759
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1760
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1761
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1762
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1763
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1764
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1765
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1766
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1767
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1768
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1769
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1770
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1771
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1772
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1773
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1774
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1775
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1776
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1777
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1778
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1779
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1780
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1781
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1782
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1783
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1784
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1785
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1786
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1787
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1788
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1789
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1790
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1791
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1792
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1793
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1794
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1795
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1796
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1797
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1798
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1799
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1800
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1801
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1802
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1803
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1804
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1805
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1806
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1807
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1808
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1809
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1810
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1811
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1812
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1813
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1814
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1815
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1816
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1817
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1818
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1819
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1820
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1821
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1822
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1823
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1824
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1825
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1826
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1827
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1828
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1829
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1830
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1831
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1832
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1833
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1834
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1835
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1836
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1837
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1838
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1839
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1840
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1841
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1842
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1843
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1844
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1845
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1846
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1847
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1848
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1849
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1850
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1851
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1852
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1853
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1854
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1855
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1856
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1857
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1858
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1859
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1860
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1861
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1862
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1863
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1864
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1865
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1866
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1867
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1868
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1869
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1870
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1871
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1872
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1873
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1874
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1875
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1876
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1877
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1878
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1879
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1880
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1881
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1882
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1883
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1884
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1885
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1886
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1887
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1888
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1889
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1890
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1891
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1892
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1893
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1894
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1895
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1896
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1897
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1898
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1899
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1900
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1901
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1902
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1903
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1904
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1905
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1906
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1907
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1908
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1909
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1910
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1911
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1912
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1913
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1914
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1915
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1916
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1917
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1918
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1919
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1920
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1921
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1922
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1923
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1924
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1925
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1926
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1927
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1928
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1929
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1930
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1931
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1932
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1933
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1934
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1935
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1936
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1937
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1938
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1939
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1940
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1941
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1942
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1943
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1944
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1945
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1946
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1947
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1948
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1949
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1950
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1951
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1952
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1953
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1954
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1955
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1956
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1957
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1958
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1959
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1960
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1961
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1962
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1963
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1964
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1965
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1966
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1967
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1968
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1969
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1970
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1971
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1972
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1973
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1974
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1975
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1976
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1977
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1978
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1979
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1980
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1981
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1982
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1983
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1984
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1985
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1986
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1987
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1988
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1989
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1990
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1991
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1992
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1993
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1994
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1995
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1996
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1997
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1998
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_1999
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2000
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2001
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2002
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2003
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2004
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2005
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2006
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2007
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2008
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2009
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2010
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2011
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2012
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2013
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2014
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2015
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2016
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2017
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2018
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2019
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2020
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2021
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2022
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2023
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2024
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2025
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2026
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2027
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2028
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2029
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2030
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2031
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2032
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2033
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2034
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2035
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2036
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2037
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2038
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2039
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2040
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_init_2041
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_3   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_4   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_5   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_6   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_7   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_8   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_9   
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_10  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_11  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_12  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_13  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_14  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_15  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_16  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_17  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_18  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_19  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_20  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_21  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_22  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_23  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_24  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_25  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_26  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_27  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_28  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_29  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_30  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_31  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_32  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_33  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_34  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_35  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_36  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_37  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_38  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_39  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_40  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_41  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_42  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_43  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_44  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_45  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_46  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_47  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_48  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_49  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_50  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_51  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_52  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_53  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_54  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_55  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_56  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_57  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_58  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_59  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_60  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_61  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_62  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_63  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_64  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_65  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_66  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_67  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_68  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_69  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_70  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_71  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_72  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_73  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_74  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_75  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_76  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_77  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_78  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_79  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_80  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_81  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_82  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_83  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_84  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_85  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_86  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_87  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_88  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_89  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_90  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_91  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_92  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_93  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_94  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_95  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_96  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_97  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_98  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_99  
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_100 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_101 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_102 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_103 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_104 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_105 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_106 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_107 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_108 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_109 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_110 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_111 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_112 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_113 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_114 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_115 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_116 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_117 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_118 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_119 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_120 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_121 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_122 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_123 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_124 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_125 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_126 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_127 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_128 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_129 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_130 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_131 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_132 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_133 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_134 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_135 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_136 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_137 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_138 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_139 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_140 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_141 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_142 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_143 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_144 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_145 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_146 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_147 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_148 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_149 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_150 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_151 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_152 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_153 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_154 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_155 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_156 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_157 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_158 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_159 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_160 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_161 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_162 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_163 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_164 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_165 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_166 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_167 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_168 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_169 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_170 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_171 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_172 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_173 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_174 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_175 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_176 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_177 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_178 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_179 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_180 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_181 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_182 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_183 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_184 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_185 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_186 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_187 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_188 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_189 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_190 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_191 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_192 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_193 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_194 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_195 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_196 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_197 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_198 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_199 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_200 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_201 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_202 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_203 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_204 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_205 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_206 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_207 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_208 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_209 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_210 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_211 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_212 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_213 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_214 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_215 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_216 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_217 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_218 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_219 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_220 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_221 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_222 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_223 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_224 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_225 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_226 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_227 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_228 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_229 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_230 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_231 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_232 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_233 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_234 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_235 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_236 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_237 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_238 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_239 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_240 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_241 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_242 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_243 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_244 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_245 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_246 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_247 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_248 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_249 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_250 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_251 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_252 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_253 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_254 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_255 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_256 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_257 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_258 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_259 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_260 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_261 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_262 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_263 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_264 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_265 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_266 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_267 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_268 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_269 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_270 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_271 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_272 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_273 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_274 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_275 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_276 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_277 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_278 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_279 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_280 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_281 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_282 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_283 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_284 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_285 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_286 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_287 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_288 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_289 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_290 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_291 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_292 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_293 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_294 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_295 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_296 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_297 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_298 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_299 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_300 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_301 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_302 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_303 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_304 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_305 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_306 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_307 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_308 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_309 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_310 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_311 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_312 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_313 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_314 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_315 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_316 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_317 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_318 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_319 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_320 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_321 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_322 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_323 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_324 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_325 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_326 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_327 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_328 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_329 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_330 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_331 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_332 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_333 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_334 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_335 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_336 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_337 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_338 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_339 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_340 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_341 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_342 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_343 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_344 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_345 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_346 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_347 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_348 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_349 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_350 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_351 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_352 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_353 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_354 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_355 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_356 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_357 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_358 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_359 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_360 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_361 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_362 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_363 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_364 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_365 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_366 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_367 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_368 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_369 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_370 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_371 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_372 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_373 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_374 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_375 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_376 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_377 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_378 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_379 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_380 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_381 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_382 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_383 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_384 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_385 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_386 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_387 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_388 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_389 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_390 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_391 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_392 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_393 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_394 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_395 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_396 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_397 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_398 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_399 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_400 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_401 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_402 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_403 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_404 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_405 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_406 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_407 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_408 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_409 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_410 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_411 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_412 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_413 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_414 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_415 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_416 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_417 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_418 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_419 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_420 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_421 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_422 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_423 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_424 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_425 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_426 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_427 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_428 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_429 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_430 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_431 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_432 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_433 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_434 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_435 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_436 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_437 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_438 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_439 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_440 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_441 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_442 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_443 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_444 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_445 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_446 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_447 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_448 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_449 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_450 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_451 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_452 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_453 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_454 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_455 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_456 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_457 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_458 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_459 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_460 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_461 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_462 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_463 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_464 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_465 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_466 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_467 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_468 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_469 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_470 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_471 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_472 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_473 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_474 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_475 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_476 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_477 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_478 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_479 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_480 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_481 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_482 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_483 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_484 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_485 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_486 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_487 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_488 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_489 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_490 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_491 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_492 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_493 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_494 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_495 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_496 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_497 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_498 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_499 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_500 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_501 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_502 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_503 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_504 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_505 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_506 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_507 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_508 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_509 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_510 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_511 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_512 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_513 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_514 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_515 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_516 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_517 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_518 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_519 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_520 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_521 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_522 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_523 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_524 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_525 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_526 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_527 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_528 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_529 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_530 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_531 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_532 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_533 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_534 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_535 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_536 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_537 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_538 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_539 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_540 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_541 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_542 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_543 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_544 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_545 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_546 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_547 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_548 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_549 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_550 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_551 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_552 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_553 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_554 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_555 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_556 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_557 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_558 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_559 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_560 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_561 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_562 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_563 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_564 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_565 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_566 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_567 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_568 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_569 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_570 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_571 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_572 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_573 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_574 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_575 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_576 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_577 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_578 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_579 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_580 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_581 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_582 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_583 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_584 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_585 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_586 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_587 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_588 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_589 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_590 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_591 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_592 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_593 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_594 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_595 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_596 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_597 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_598 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_599 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_600 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_601 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_602 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_603 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_604 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_605 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_606 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_607 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_608 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_609 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_610 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_611 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_612 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_613 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_614 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_615 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_616 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_617 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_618 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_619 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_620 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_621 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_622 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_623 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_624 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_625 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_626 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_627 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_628 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_629 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_630 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_631 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_632 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_633 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_634 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_635 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_636 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_637 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_638 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_639 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_640 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_641 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_642 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_643 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_644 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_645 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_646 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_647 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_648 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_649 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_650 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_651 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_652 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_653 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_654 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_655 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_656 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_657 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_658 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_659 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_660 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_661 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_662 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_663 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_664 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_665 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_666 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_667 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_668 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_669 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_670 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_671 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_672 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_673 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_674 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_675 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_676 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_677 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_678 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_679 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_680 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_681 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_682 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_683 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_684 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_685 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_686 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_687 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_688 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_689 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_690 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_691 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_692 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_693 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_694 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_695 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_696 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_697 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_698 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_699 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_700 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_701 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_702 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_703 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_704 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_705 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_706 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_707 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_708 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_709 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_710 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_711 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_712 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_713 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_714 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_715 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_716 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_717 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_718 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_719 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_720 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_721 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_722 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_723 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_724 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_725 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_726 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_727 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_728 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_729 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_730 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_731 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_732 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_733 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_734 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_735 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_736 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_737 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_738 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_739 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_740 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_741 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_742 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_743 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_744 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_745 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_746 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_747 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_748 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_749 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_750 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_751 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_752 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_753 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_754 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_755 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_756 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_757 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_758 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_759 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_760 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_761 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_762 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_763 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_764 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_765 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_766 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_767 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_768 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_769 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_770 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_771 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_772 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_773 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_774 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_775 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_776 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_777 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_778 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_779 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_780 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_781 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_782 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_783 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_784 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_785 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_786 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_787 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_788 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_789 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_790 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_791 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_792 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_793 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_794 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_795 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_796 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_797 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_798 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_799 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_800 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_801 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_802 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_803 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_804 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_805 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_806 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_807 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_808 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_809 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_810 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_811 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_812 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_813 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_814 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_815 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_816 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_817 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_818 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_819 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_820 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_821 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_822 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_823 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_824 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_825 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_826 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_827 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_828 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_829 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_830 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_831 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_832 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_833 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_834 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_835 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_836 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_837 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_838 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_839 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_840 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_841 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_842 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_843 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_844 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_845 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_846 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_847 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_848 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_849 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_850 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_851 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_852 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_853 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_854 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_855 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_856 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_857 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_858 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_859 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_860 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_861 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_862 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_863 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_864 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_865 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_866 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_867 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_868 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_869 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_870 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_871 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_872 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_873 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_874 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_875 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_876 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_877 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_878 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_879 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_880 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_881 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_882 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_883 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_884 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_885 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_886 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_887 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_888 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_889 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_890 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_891 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_892 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_893 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_894 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_895 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_896 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_897 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_898 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_899 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_900 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_901 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_902 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_903 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_904 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_905 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_906 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_907 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_908 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_909 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_910 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_911 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_912 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_913 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_914 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_915 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_916 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_917 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_918 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_919 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_920 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_921 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_922 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_923 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_924 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_925 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_926 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_927 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_928 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_929 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_930 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_931 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_932 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_933 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_934 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_935 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_936 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_937 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_938 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_939 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_940 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_941 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_942 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_943 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_944 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_945 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_946 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_947 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_948 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_949 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_950 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_951 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_952 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_953 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_954 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_955 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_956 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_957 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_958 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_959 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_960 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_961 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_962 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_963 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_964 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_965 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_966 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_967 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_968 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_969 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_970 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_971 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_972 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_973 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_974 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_975 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_976 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_977 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_978 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_979 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_980 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_981 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_982 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_983 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_984 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_985 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_986 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_987 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_988 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_989 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_990 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_991 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_992 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_993 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_994 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_995 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_996 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_997 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_998 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_999 
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1000
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1001
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1002
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1003
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1004
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1005
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1006
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1007
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1008
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1009
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1010
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1011
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1012
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1013
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1014
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1015
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1016
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1017
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1018
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1019
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1020
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1021
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1022
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1023
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1024
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1025
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1026
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1027
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1028
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1029
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1030
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1031
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1032
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1033
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1034
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1035
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1036
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1037
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1038
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1039
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1040
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1041
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1042
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1043
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1044
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1045
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1046
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1047
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1048
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1049
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1050
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1051
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1052
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1053
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1054
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1055
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1056
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1057
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1058
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1059
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1060
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1061
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1062
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1063
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1064
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1065
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1066
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1067
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1068
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1069
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1070
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1071
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1072
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1073
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1074
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1075
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1076
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1077
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1078
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1079
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1080
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1081
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1082
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1083
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1084
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1085
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1086
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1087
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1088
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1089
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1090
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1091
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1092
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1093
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1094
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1095
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1096
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1097
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1098
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1099
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1100
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1101
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1102
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1103
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1104
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1105
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1106
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1107
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1108
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1109
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1110
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1111
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1112
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1113
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1114
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1115
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1116
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1117
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1118
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1119
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1120
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1121
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1122
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1123
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1124
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1125
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1126
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1127
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1128
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1129
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1130
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1131
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1132
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1133
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1134
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1135
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1136
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1137
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1138
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1139
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1140
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1141
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1142
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1143
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1144
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1145
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1146
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1147
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1148
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1149
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1150
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1151
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1152
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1153
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1154
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1155
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1156
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1157
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1158
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1159
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1160
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1161
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1162
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1163
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1164
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1165
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1166
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1167
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1168
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1169
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1170
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1171
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1172
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1173
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1174
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1175
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1176
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1177
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1178
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1179
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1180
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1181
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1182
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1183
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1184
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1185
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1186
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1187
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1188
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1189
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1190
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1191
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1192
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1193
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1194
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1195
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1196
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1197
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1198
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1199
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1200
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1201
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1202
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1203
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1204
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1205
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1206
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1207
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1208
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1209
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1210
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1211
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1212
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1213
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1214
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1215
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1216
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1217
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1218
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1219
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1220
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1221
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1222
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1223
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1224
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1225
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1226
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1227
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1228
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1229
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1230
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1231
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1232
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1233
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1234
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1235
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1236
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1237
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1238
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1239
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1240
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1241
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1242
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1243
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1244
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1245
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1246
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1247
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1248
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1249
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1250
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1251
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1252
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1253
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1254
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1255
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1256
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1257
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1258
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1259
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1260
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1261
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1262
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1263
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1264
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1265
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1266
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1267
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1268
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1269
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1270
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1271
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1272
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1273
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1274
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1275
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1276
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1277
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1278
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1279
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1280
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1281
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1282
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1283
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1284
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1285
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1286
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1287
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1288
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1289
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1290
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1291
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1292
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1293
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1294
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1295
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1296
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1297
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1298
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1299
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1300
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1301
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1302
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1303
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1304
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1305
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1306
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1307
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1308
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1309
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1310
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1311
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1312
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1313
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1314
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1315
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1316
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1317
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1318
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1319
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1320
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1321
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1322
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1323
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1324
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1325
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1326
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1327
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1328
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1329
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1330
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1331
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1332
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1333
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1334
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1335
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1336
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1337
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1338
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1339
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1340
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1341
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1342
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1343
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1344
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1345
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1346
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1347
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1348
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1349
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1350
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1351
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1352
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1353
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1354
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1355
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1356
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1357
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1358
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1359
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1360
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1361
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1362
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1363
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1364
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1365
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1366
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1367
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1368
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1369
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1370
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1371
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1372
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1373
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1374
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1375
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1376
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1377
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1378
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1379
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1380
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1381
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1382
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1383
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1384
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1385
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1386
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1387
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1388
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1389
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1390
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1391
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1392
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1393
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1394
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1395
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1396
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1397
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1398
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1399
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1400
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1401
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1402
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1403
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1404
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1405
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1406
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1407
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1408
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1409
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1410
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1411
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1412
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1413
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1414
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1415
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1416
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1417
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1418
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1419
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1420
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1421
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1422
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1423
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1424
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1425
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1426
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1427
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1428
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1429
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1430
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1431
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1432
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1433
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1434
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1435
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1436
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1437
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1438
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1439
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1440
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1441
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1442
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1443
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1444
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1445
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1446
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1447
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1448
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1449
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1450
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1451
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1452
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1453
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1454
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1455
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1456
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1457
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1458
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1459
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1460
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1461
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1462
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1463
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1464
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1465
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1466
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1467
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1468
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1469
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1470
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1471
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1472
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1473
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1474
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1475
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1476
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1477
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1478
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1479
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1480
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1481
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1482
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1483
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1484
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1485
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1486
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1487
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1488
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1489
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1490
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1491
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1492
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1493
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1494
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1495
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1496
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1497
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1498
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1499
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1500
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1501
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1502
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1503
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1504
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1505
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1506
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1507
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1508
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1509
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1510
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1511
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1512
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1513
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1514
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1515
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1516
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1517
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1518
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1519
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1520
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1521
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1522
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1523
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1524
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1525
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1526
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1527
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1528
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1529
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1530
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1531
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1532
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1533
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1534
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1535
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1536
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1537
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1538
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1539
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1540
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1541
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1542
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1543
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1544
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1545
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1546
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1547
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1548
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1549
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1550
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1551
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1552
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1553
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1554
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1555
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1556
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1557
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1558
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1559
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1560
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1561
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1562
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1563
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1564
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1565
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1566
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1567
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1568
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1569
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1570
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1571
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1572
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1573
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1574
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1575
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1576
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1577
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1578
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1579
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1580
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1581
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1582
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1583
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1584
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1585
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1586
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1587
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1588
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1589
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1590
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1591
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1592
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1593
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1594
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1595
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1596
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1597
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1598
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1599
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1600
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1601
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1602
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1603
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1604
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1605
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1606
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1607
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1608
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1609
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1610
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1611
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1612
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1613
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1614
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1615
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1616
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1617
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1618
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1619
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1620
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1621
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1622
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1623
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1624
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1625
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1626
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1627
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1628
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1629
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1630
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1631
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1632
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1633
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1634
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1635
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1636
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1637
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1638
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1639
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1640
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1641
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1642
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1643
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1644
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1645
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1646
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1647
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1648
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1649
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1650
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1651
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1652
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1653
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1654
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1655
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1656
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1657
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1658
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1659
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1660
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1661
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1662
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1663
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1664
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1665
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1666
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1667
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1668
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1669
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1670
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1671
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1672
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1673
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1674
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1675
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1676
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1677
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1678
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1679
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1680
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1681
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1682
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1683
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1684
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1685
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1686
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1687
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1688
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1689
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1690
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1691
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1692
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1693
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1694
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1695
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1696
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1697
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1698
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1699
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1700
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1701
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1702
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1703
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1704
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1705
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1706
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1707
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1708
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1709
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1710
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1711
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1712
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1713
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1714
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1715
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1716
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1717
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1718
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1719
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1720
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1721
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1722
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1723
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1724
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1725
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1726
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1727
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1728
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1729
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1730
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1731
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1732
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1733
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1734
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1735
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1736
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1737
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1738
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1739
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1740
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1741
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1742
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1743
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1744
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1745
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1746
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1747
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1748
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1749
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1750
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1751
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1752
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1753
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1754
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1755
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1756
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1757
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1758
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1759
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1760
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1761
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1762
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1763
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1764
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1765
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1766
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1767
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1768
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1769
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1770
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1771
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1772
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1773
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1774
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1775
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1776
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1777
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1778
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1779
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1780
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1781
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1782
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1783
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1784
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1785
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1786
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1787
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1788
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1789
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1790
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1791
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1792
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1793
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1794
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1795
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1796
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1797
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1798
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1799
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1800
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1801
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1802
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1803
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1804
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1805
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1806
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1807
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1808
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1809
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1810
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1811
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1812
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1813
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1814
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1815
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1816
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1817
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1818
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1819
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1820
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1821
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1822
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1823
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1824
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1825
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1826
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1827
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1828
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1829
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1830
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1831
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1832
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1833
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1834
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1835
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1836
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1837
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1838
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1839
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1840
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1841
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1842
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1843
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1844
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1845
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1846
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1847
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1848
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1849
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1850
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1851
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1852
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1853
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1854
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1855
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1856
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1857
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1858
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1859
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1860
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1861
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1862
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1863
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1864
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1865
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1866
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1867
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1868
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1869
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1870
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1871
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1872
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1873
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1874
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1875
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1876
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1877
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1878
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1879
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1880
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1881
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1882
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1883
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1884
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1885
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1886
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1887
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1888
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1889
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1890
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1891
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1892
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1893
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1894
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1895
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1896
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1897
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1898
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1899
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1900
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1901
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1902
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1903
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1904
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1905
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1906
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1907
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1908
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1909
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1910
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1911
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1912
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1913
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1914
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1915
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1916
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1917
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1918
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1919
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1920
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1921
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1922
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1923
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1924
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1925
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1926
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1927
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1928
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1929
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1930
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1931
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1932
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1933
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1934
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1935
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1936
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1937
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1938
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1939
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1940
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1941
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1942
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1943
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1944
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1945
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1946
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1947
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1948
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1949
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1950
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1951
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1952
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1953
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1954
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1955
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1956
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1957
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1958
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1959
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1960
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1961
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1962
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1963
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1964
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1965
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1966
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1967
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1968
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1969
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1970
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1971
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1972
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1973
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1974
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1975
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1976
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1977
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1978
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1979
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1980
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1981
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1982
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1983
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1984
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1985
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1986
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1987
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1988
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1989
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1990
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1991
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1992
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1993
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1994
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1995
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1996
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1997
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1998
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_1999
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2000
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2001
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2002
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2003
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2004
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2005
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2006
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2007
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2008
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2009
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2010
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2011
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2012
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2013
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2014
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2015
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2016
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2017
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2018
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2019
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2020
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2021
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2022
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2023
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2024
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2025
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2026
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2027
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2028
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2029
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2030
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2031
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2032
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2033
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2034
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2035
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2036
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2037
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2038
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2039
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2040
+-15	10	-14	-14	0	0	-4	0	0	0	0	0	0	0	#_TG_loss_chronic_2041
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1   
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2   
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_3   
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_4   
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_5   
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_6   
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_7   
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_8   
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_9   
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_10  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_11  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_12  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_13  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_14  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_15  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_16  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_17  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_18  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_19  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_20  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_21  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_22  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_23  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_24  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_25  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_26  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_27  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_28  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_29  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_30  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_31  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_32  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_33  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_34  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_35  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_36  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_37  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_38  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_39  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_40  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_41  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_42  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_43  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_44  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_45  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_46  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_47  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_48  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_49  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_50  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_51  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_52  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_53  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_54  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_55  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_56  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_57  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_58  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_59  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_60  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_61  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_62  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_63  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_64  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_65  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_66  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_67  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_68  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_69  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_70  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_71  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_72  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_73  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_74  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_75  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_76  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_77  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_78  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_79  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_80  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_81  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_82  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_83  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_84  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_85  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_86  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_87  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_88  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_89  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_90  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_91  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_92  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_93  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_94  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_95  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_96  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_97  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_98  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_99  
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_100 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_101 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_102 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_103 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_104 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_105 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_106 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_107 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_108 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_109 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_110 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_111 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_112 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_113 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_114 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_115 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_116 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_117 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_118 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_119 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_120 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_121 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_122 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_123 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_124 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_125 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_126 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_127 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_128 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_129 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_130 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_131 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_132 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_133 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_134 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_135 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_136 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_137 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_138 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_139 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_140 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_141 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_142 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_143 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_144 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_145 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_146 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_147 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_148 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_149 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_150 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_151 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_152 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_153 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_154 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_155 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_156 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_157 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_158 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_159 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_160 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_161 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_162 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_163 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_164 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_165 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_166 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_167 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_168 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_169 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_170 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_171 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_172 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_173 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_174 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_175 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_176 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_177 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_178 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_179 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_180 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_181 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_182 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_183 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_184 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_185 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_186 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_187 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_188 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_189 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_190 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_191 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_192 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_193 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_194 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_195 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_196 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_197 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_198 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_199 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_200 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_201 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_202 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_203 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_204 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_205 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_206 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_207 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_208 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_209 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_210 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_211 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_212 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_213 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_214 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_215 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_216 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_217 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_218 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_219 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_220 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_221 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_222 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_223 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_224 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_225 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_226 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_227 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_228 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_229 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_230 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_231 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_232 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_233 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_234 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_235 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_236 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_237 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_238 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_239 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_240 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_241 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_242 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_243 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_244 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_245 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_246 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_247 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_248 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_249 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_250 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_251 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_252 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_253 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_254 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_255 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_256 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_257 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_258 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_259 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_260 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_261 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_262 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_263 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_264 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_265 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_266 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_267 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_268 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_269 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_270 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_271 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_272 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_273 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_274 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_275 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_276 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_277 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_278 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_279 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_280 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_281 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_282 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_283 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_284 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_285 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_286 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_287 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_288 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_289 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_290 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_291 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_292 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_293 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_294 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_295 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_296 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_297 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_298 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_299 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_300 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_301 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_302 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_303 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_304 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_305 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_306 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_307 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_308 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_309 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_310 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_311 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_312 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_313 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_314 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_315 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_316 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_317 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_318 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_319 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_320 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_321 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_322 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_323 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_324 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_325 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_326 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_327 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_328 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_329 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_330 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_331 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_332 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_333 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_334 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_335 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_336 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_337 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_338 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_339 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_340 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_341 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_342 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_343 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_344 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_345 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_346 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_347 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_348 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_349 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_350 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_351 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_352 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_353 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_354 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_355 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_356 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_357 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_358 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_359 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_360 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_361 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_362 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_363 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_364 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_365 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_366 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_367 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_368 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_369 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_370 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_371 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_372 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_373 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_374 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_375 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_376 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_377 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_378 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_379 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_380 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_381 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_382 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_383 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_384 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_385 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_386 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_387 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_388 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_389 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_390 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_391 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_392 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_393 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_394 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_395 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_396 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_397 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_398 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_399 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_400 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_401 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_402 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_403 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_404 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_405 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_406 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_407 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_408 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_409 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_410 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_411 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_412 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_413 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_414 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_415 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_416 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_417 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_418 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_419 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_420 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_421 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_422 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_423 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_424 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_425 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_426 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_427 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_428 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_429 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_430 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_431 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_432 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_433 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_434 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_435 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_436 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_437 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_438 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_439 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_440 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_441 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_442 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_443 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_444 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_445 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_446 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_447 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_448 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_449 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_450 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_451 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_452 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_453 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_454 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_455 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_456 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_457 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_458 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_459 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_460 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_461 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_462 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_463 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_464 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_465 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_466 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_467 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_468 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_469 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_470 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_471 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_472 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_473 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_474 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_475 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_476 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_477 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_478 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_479 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_480 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_481 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_482 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_483 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_484 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_485 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_486 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_487 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_488 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_489 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_490 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_491 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_492 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_493 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_494 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_495 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_496 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_497 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_498 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_499 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_500 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_501 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_502 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_503 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_504 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_505 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_506 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_507 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_508 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_509 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_510 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_511 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_512 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_513 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_514 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_515 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_516 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_517 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_518 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_519 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_520 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_521 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_522 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_523 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_524 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_525 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_526 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_527 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_528 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_529 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_530 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_531 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_532 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_533 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_534 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_535 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_536 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_537 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_538 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_539 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_540 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_541 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_542 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_543 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_544 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_545 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_546 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_547 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_548 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_549 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_550 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_551 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_552 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_553 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_554 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_555 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_556 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_557 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_558 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_559 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_560 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_561 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_562 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_563 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_564 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_565 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_566 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_567 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_568 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_569 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_570 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_571 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_572 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_573 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_574 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_575 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_576 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_577 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_578 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_579 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_580 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_581 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_582 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_583 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_584 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_585 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_586 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_587 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_588 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_589 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_590 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_591 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_592 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_593 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_594 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_595 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_596 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_597 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_598 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_599 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_600 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_601 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_602 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_603 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_604 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_605 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_606 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_607 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_608 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_609 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_610 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_611 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_612 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_613 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_614 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_615 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_616 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_617 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_618 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_619 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_620 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_621 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_622 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_623 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_624 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_625 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_626 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_627 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_628 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_629 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_630 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_631 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_632 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_633 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_634 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_635 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_636 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_637 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_638 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_639 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_640 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_641 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_642 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_643 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_644 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_645 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_646 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_647 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_648 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_649 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_650 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_651 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_652 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_653 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_654 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_655 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_656 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_657 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_658 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_659 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_660 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_661 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_662 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_663 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_664 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_665 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_666 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_667 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_668 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_669 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_670 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_671 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_672 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_673 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_674 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_675 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_676 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_677 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_678 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_679 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_680 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_681 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_682 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_683 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_684 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_685 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_686 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_687 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_688 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_689 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_690 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_691 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_692 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_693 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_694 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_695 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_696 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_697 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_698 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_699 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_700 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_701 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_702 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_703 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_704 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_705 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_706 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_707 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_708 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_709 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_710 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_711 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_712 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_713 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_714 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_715 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_716 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_717 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_718 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_719 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_720 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_721 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_722 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_723 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_724 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_725 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_726 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_727 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_728 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_729 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_730 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_731 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_732 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_733 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_734 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_735 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_736 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_737 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_738 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_739 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_740 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_741 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_742 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_743 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_744 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_745 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_746 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_747 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_748 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_749 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_750 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_751 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_752 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_753 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_754 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_755 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_756 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_757 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_758 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_759 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_760 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_761 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_762 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_763 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_764 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_765 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_766 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_767 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_768 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_769 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_770 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_771 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_772 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_773 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_774 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_775 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_776 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_777 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_778 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_779 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_780 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_781 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_782 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_783 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_784 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_785 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_786 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_787 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_788 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_789 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_790 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_791 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_792 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_793 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_794 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_795 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_796 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_797 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_798 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_799 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_800 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_801 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_802 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_803 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_804 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_805 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_806 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_807 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_808 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_809 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_810 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_811 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_812 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_813 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_814 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_815 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_816 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_817 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_818 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_819 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_820 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_821 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_822 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_823 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_824 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_825 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_826 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_827 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_828 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_829 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_830 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_831 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_832 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_833 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_834 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_835 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_836 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_837 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_838 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_839 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_840 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_841 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_842 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_843 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_844 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_845 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_846 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_847 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_848 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_849 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_850 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_851 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_852 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_853 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_854 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_855 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_856 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_857 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_858 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_859 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_860 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_861 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_862 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_863 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_864 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_865 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_866 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_867 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_868 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_869 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_870 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_871 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_872 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_873 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_874 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_875 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_876 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_877 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_878 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_879 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_880 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_881 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_882 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_883 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_884 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_885 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_886 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_887 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_888 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_889 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_890 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_891 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_892 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_893 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_894 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_895 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_896 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_897 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_898 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_899 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_900 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_901 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_902 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_903 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_904 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_905 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_906 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_907 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_908 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_909 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_910 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_911 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_912 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_913 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_914 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_915 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_916 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_917 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_918 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_919 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_920 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_921 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_922 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_923 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_924 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_925 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_926 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_927 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_928 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_929 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_930 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_931 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_932 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_933 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_934 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_935 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_936 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_937 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_938 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_939 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_940 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_941 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_942 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_943 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_944 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_945 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_946 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_947 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_948 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_949 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_950 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_951 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_952 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_953 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_954 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_955 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_956 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_957 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_958 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_959 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_960 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_961 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_962 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_963 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_964 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_965 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_966 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_967 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_968 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_969 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_970 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_971 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_972 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_973 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_974 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_975 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_976 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_977 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_978 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_979 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_980 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_981 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_982 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_983 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_984 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_985 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_986 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_987 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_988 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_989 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_990 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_991 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_992 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_993 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_994 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_995 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_996 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_997 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_998 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_999 
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1000
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1001
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1002
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1003
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1004
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1005
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1006
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1007
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1008
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1009
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1010
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1011
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1012
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1013
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1014
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1015
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1016
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1017
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1018
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1019
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1020
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1021
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1022
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1023
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1024
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1025
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1026
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1027
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1028
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1029
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1030
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1031
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1032
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1033
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1034
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1035
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1036
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1037
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1038
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1039
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1040
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1041
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1042
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1043
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1044
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1045
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1046
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1047
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1048
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1049
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1050
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1051
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1052
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1053
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1054
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1055
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1056
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1057
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1058
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1059
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1060
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1061
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1062
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1063
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1064
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1065
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1066
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1067
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1068
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1069
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1070
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1071
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1072
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1073
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1074
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1075
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1076
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1077
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1078
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1079
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1080
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1081
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1082
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1083
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1084
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1085
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1086
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1087
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1088
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1089
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1090
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1091
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1092
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1093
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1094
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1095
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1096
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1097
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1098
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1099
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1100
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1101
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1102
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1103
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1104
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1105
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1106
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1107
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1108
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1109
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1110
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1111
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1112
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1113
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1114
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1115
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1116
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1117
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1118
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1119
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1120
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1121
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1122
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1123
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1124
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1125
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1126
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1127
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1128
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1129
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1130
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1131
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1132
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1133
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1134
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1135
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1136
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1137
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1138
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1139
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1140
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1141
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1142
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1143
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1144
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1145
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1146
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1147
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1148
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1149
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1150
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1151
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1152
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1153
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1154
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1155
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1156
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1157
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1158
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1159
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1160
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1161
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1162
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1163
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1164
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1165
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1166
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1167
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1168
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1169
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1170
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1171
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1172
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1173
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1174
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1175
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1176
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1177
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1178
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1179
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1180
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1181
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1182
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1183
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1184
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1185
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1186
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1187
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1188
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1189
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1190
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1191
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1192
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1193
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1194
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1195
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1196
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1197
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1198
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1199
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1200
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1201
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1202
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1203
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1204
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1205
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1206
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1207
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1208
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1209
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1210
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1211
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1212
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1213
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1214
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1215
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1216
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1217
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1218
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1219
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1220
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1221
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1222
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1223
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1224
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1225
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1226
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1227
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1228
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1229
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1230
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1231
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1232
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1233
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1234
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1235
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1236
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1237
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1238
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1239
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1240
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1241
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1242
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1243
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1244
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1245
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1246
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1247
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1248
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1249
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1250
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1251
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1252
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1253
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1254
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1255
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1256
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1257
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1258
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1259
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1260
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1261
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1262
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1263
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1264
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1265
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1266
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1267
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1268
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1269
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1270
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1271
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1272
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1273
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1274
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1275
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1276
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1277
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1278
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1279
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1280
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1281
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1282
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1283
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1284
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1285
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1286
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1287
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1288
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1289
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1290
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1291
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1292
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1293
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1294
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1295
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1296
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1297
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1298
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1299
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1300
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1301
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1302
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1303
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1304
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1305
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1306
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1307
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1308
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1309
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1310
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1311
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1312
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1313
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1314
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1315
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1316
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1317
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1318
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1319
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1320
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1321
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1322
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1323
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1324
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1325
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1326
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1327
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1328
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1329
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1330
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1331
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1332
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1333
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1334
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1335
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1336
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1337
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1338
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1339
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1340
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1341
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1342
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1343
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1344
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1345
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1346
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1347
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1348
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1349
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1350
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1351
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1352
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1353
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1354
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1355
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1356
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1357
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1358
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1359
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1360
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1361
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1362
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1363
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1364
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1365
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1366
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1367
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1368
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1369
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1370
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1371
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1372
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1373
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1374
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1375
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1376
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1377
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1378
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1379
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1380
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1381
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1382
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1383
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1384
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1385
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1386
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1387
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1388
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1389
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1390
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1391
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1392
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1393
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1394
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1395
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1396
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1397
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1398
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1399
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1400
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1401
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1402
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1403
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1404
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1405
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1406
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1407
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1408
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1409
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1410
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1411
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1412
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1413
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1414
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1415
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1416
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1417
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1418
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1419
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1420
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1421
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1422
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1423
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1424
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1425
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1426
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1427
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1428
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1429
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1430
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1431
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1432
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1433
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1434
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1435
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1436
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1437
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1438
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1439
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1440
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1441
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1442
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1443
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1444
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1445
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1446
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1447
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1448
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1449
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1450
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1451
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1452
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1453
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1454
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1455
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1456
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1457
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1458
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1459
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1460
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1461
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1462
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1463
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1464
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1465
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1466
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1467
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1468
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1469
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1470
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1471
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1472
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1473
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1474
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1475
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1476
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1477
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1478
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1479
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1480
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1481
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1482
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1483
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1484
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1485
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1486
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1487
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1488
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1489
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1490
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1491
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1492
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1493
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1494
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1495
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1496
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1497
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1498
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1499
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1500
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1501
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1502
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1503
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1504
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1505
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1506
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1507
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1508
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1509
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1510
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1511
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1512
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1513
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1514
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1515
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1516
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1517
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1518
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1519
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1520
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1521
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1522
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1523
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1524
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1525
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1526
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1527
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1528
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1529
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1530
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1531
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1532
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1533
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1534
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1535
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1536
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1537
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1538
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1539
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1540
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1541
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1542
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1543
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1544
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1545
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1546
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1547
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1548
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1549
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1550
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1551
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1552
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1553
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1554
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1555
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1556
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1557
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1558
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1559
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1560
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1561
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1562
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1563
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1564
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1565
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1566
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1567
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1568
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1569
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1570
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1571
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1572
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1573
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1574
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1575
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1576
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1577
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1578
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1579
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1580
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1581
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1582
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1583
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1584
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1585
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1586
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1587
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1588
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1589
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1590
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1591
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1592
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1593
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1594
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1595
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1596
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1597
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1598
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1599
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1600
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1601
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1602
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1603
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1604
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1605
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1606
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1607
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1608
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1609
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1610
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1611
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1612
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1613
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1614
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1615
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1616
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1617
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1618
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1619
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1620
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1621
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1622
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1623
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1624
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1625
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1626
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1627
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1628
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1629
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1630
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1631
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1632
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1633
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1634
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1635
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1636
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1637
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1638
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1639
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1640
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1641
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1642
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1643
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1644
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1645
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1646
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1647
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1648
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1649
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1650
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1651
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1652
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1653
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1654
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1655
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1656
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1657
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1658
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1659
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1660
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1661
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1662
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1663
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1664
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1665
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1666
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1667
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1668
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1669
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1670
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1671
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1672
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1673
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1674
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1675
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1676
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1677
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1678
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1679
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1680
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1681
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1682
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1683
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1684
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1685
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1686
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1687
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1688
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1689
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1690
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1691
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1692
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1693
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1694
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1695
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1696
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1697
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1698
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1699
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1700
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1701
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1702
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1703
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1704
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1705
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1706
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1707
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1708
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1709
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1710
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1711
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1712
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1713
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1714
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1715
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1716
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1717
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1718
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1719
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1720
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1721
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1722
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1723
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1724
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1725
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1726
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1727
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1728
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1729
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1730
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1731
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1732
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1733
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1734
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1735
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1736
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1737
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1738
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1739
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1740
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1741
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1742
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1743
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1744
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1745
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1746
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1747
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1748
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1749
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1750
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1751
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1752
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1753
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1754
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1755
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1756
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1757
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1758
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1759
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1760
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1761
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1762
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1763
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1764
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1765
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1766
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1767
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1768
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1769
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1770
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1771
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1772
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1773
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1774
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1775
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1776
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1777
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1778
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1779
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1780
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1781
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1782
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1783
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1784
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1785
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1786
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1787
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1788
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1789
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1790
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1791
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1792
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1793
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1794
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1795
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1796
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1797
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1798
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1799
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1800
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1801
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1802
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1803
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1804
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1805
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1806
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1807
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1808
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1809
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1810
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1811
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1812
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1813
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1814
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1815
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1816
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1817
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1818
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1819
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1820
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1821
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1822
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1823
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1824
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1825
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1826
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1827
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1828
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1829
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1830
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1831
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1832
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1833
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1834
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1835
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1836
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1837
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1838
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1839
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1840
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1841
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1842
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1843
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1844
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1845
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1846
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1847
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1848
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1849
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1850
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1851
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1852
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1853
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1854
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1855
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1856
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1857
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1858
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1859
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1860
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1861
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1862
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1863
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1864
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1865
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1866
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1867
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1868
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1869
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1870
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1871
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1872
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1873
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1874
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1875
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1876
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1877
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1878
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1879
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1880
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1881
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1882
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1883
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1884
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1885
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1886
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1887
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1888
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1889
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1890
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1891
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1892
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1893
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1894
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1895
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1896
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1897
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1898
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1899
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1900
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1901
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1902
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1903
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1904
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1905
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1906
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1907
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1908
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1909
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1910
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1911
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1912
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1913
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1914
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1915
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1916
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1917
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1918
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1919
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1920
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1921
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1922
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1923
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1924
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1925
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1926
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1927
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1928
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1929
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1930
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1931
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1932
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1933
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1934
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1935
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1936
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1937
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1938
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1939
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1940
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1941
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1942
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1943
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1944
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1945
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1946
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1947
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1948
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1949
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1950
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1951
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1952
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1953
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1954
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1955
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1956
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1957
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1958
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1959
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1960
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1961
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1962
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1963
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1964
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1965
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1966
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1967
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1968
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1969
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1970
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1971
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1972
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1973
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1974
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1975
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1976
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1977
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1978
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1979
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1980
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1981
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1982
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1983
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1984
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1985
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1986
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1987
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1988
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1989
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1990
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1991
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1992
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1993
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1994
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1995
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1996
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1997
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1998
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_1999
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2000
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2001
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2002
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2003
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2004
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2005
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2006
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2007
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2008
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2009
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2010
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2011
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2012
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2013
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2014
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2015
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2016
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2017
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2018
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2019
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2020
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2021
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2022
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2023
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2024
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2025
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2026
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2027
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2028
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2029
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2030
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2031
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2032
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2033
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2034
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2035
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2036
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2037
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2038
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2039
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2040
+1	10	7	7	0.001	1	-4	0	0	0	0	0	0	0	#_TG_overdispersion_2041
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_1 
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_2 
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_3 
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_4 
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_5 
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_6 
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_7 
+-10	10	-1.36941	-1.36941	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_8 
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_9 
+-10	10	-1.31143	-1.31143	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_10
+-10	10	-1.31143	-1.31143	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_11
+-10	10	-1.31143	-1.31143	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_12
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_13
+-10	10	-1.36941	-1.36941	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_14
+-10	10	-1.36941	-1.36941	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_15
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_16
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_17
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_18
+-10	10	-1.31591	-1.31591	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_19
+-10	10	-1.31591	-1.31591	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_20
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_21
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_22
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_23
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_24
+-10	10	-1.34289	-1.34289	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_25
+-10	10	-1.34289	-1.34289	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_26
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_27
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_28
+-10	10	-1.34683	-1.34683	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_29
+-10	10	-1.34683	-1.34683	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_30
+-10	10	-1.38629	-1.38629	2	6	6	0	0	0	0	0	0	0	#_TG_report_fleet:_31
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_1 
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_2 
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_3 
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_4 
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_5 
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_6 
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_7 
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_8 
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_9 
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_10
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_11
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_12
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_13
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_14
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_15
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_16
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_17
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_18
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_19
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_20
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_21
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_22
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_23
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_24
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_25
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_26
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_27
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_28
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_29
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_30
+-4	0	0	0	2	6	-4	0	0	0	0	0	0	0	#_TG_rpt_decay_fleet:_31
+# Input variance adjustments factors: 
+#_Factor Fleet Value
+-9999 1 0 # terminator
+#
+6 #_maxlambdaphase
+1 #_sd_offset; must be 1 if any growthCV, sigmaR, or survey extraSD is an estimated parameter
+# read 0 changes to default Lambdas (default value is 1.0)
+-9999 0 0 0 0 # terminator
+#
+0 # 0/1 read specs for more stddev reporting
+#
+999
+

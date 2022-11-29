@@ -15,11 +15,11 @@ system("ss.exe -nohess") #version 3.20
 
 
 
-cat <- SS_output(run_results, covar=FALSE)
+cat <- r4ss::SS_output(run_results, covar=FALSE)
 SS_plots(cat)
 
-SS_plots(cat,plot = c(1:20,22:26))
-SS_plots(cat,plot = c(21))
+r4ss::SS_plots(cat,plot = c(1:20,22:26))
+r4ss::SS_plots(cat,plot = c(21))
 cat$parameters
 
 cat$tagdbase1 %>% head

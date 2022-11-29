@@ -10,7 +10,7 @@
 2 #_Nsubseasons
 1 #_spawn_month
 1 #_Nsexes
-16 #_Nages
+32 #_Nages
 8 #_N_areas
 41 #_Nfleets
 #_fleetinfo

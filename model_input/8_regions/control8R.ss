@@ -320,7 +320,7 @@
 -15	15	 -1.78635	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PL_JP7(37)       
 -15	15	 0.408098	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PL_ALL8(38)      
 -30	15	 -11.2097	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PS_UNASSOC6(39)  
--15	15	 -9.87556	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PS_UNASSOC7(40)  
+-25	15	 -9.87556	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PS_UNASSOC7(40)  
 -15	15	 -7.83582	0	1	0	1	0	0	0	0	0	0	0	#_LnQ_base_index-PS_UNASSOC8(41)  
 #_no timevary Q parameters
 #

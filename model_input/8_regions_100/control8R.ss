@@ -429,10 +429,10 @@
  27 0 0 5 # 3 LL_ALL1
  15 0 0 1 # 4 PL_ALL2
  15 0 0 2 # 5 PS_ALL2
- 15 0 0 3 # 6 LL_ALL2
+ 27 0 0 5 # 6 LL_ALL2
  15 0 0 1 # 7 PL_JP_3
  15 0 0 2 # 8 PS_ALL3
- 15 0 0 3 # 9 LL_ALL3
+ 15 0 0 6 # 9 LL_ALL3
  27 0 0 5 # 10 Dom_PH5
  27 0 0 5 # 11 Dom_ID5
  27 0 0 5 # 12 IDID_PHPH5
@@ -446,7 +446,7 @@
  15 0 0 15 # 20 PS_UNASSOC6
  15 0 0 17 # 21 LL_ALL6
  15 0 0 1 # 22 PL_ALL4
- 15 0 0 3 # 23 LL_ALL4
+ 15 0 0 6 # 23 LL_ALL4
  15 0 0 1 # 24 PL_JP7
  15 0 0 14 # 25 PS_ASSOC7
  15 0 0 15 # 26 PS_UNASSOC7
@@ -573,6 +573,20 @@
 # 4   PL_ALL2 LenSelex
 # 5   PS_ALL2 LenSelex
 # 6   LL_ALL2 LenSelex
+             0             0             0             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Code_LL_ALL1(3)
+        -0.001             1     0.0329702            -1         0.001             1          3          0          0          0          0          0          0          0  #  SizeSpline_GradLo_LL_ALL1(3)
+            -1          0.02          0.02          0.02         0.001             1         -3          0          0          0          0          0          0          0  #  SizeSpline_GradHi_LL_ALL1(3)
+            13           200        23.125             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Knot_1_LL_ALL1(3)
+            13           200       41.9035             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Knot_2_LL_ALL1(3)
+            13           200       45.6322             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Knot_3_LL_ALL1(3)
+            13           200        80.298             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Knot_4_LL_ALL1(3)
+            13           200        90.923             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Knot_5_LL_ALL1(3)
+           -35             0      -2.99741             0         0.001             0          2          0          0          0          0          0          0          0  #  SizeSpline_Val_1_LL_ALL1(3)
+           -10             7     -0.373666             0         0.001             0          2          0          0          0          0          0          0          0  #  SizeSpline_Val_2_LL_ALL1(3)
+           -10             7      0.278668            -1            -1             0         -2          0          0          0          0          0          0          0  #  SizeSpline_Val_3_LL_ALL1(3)
+           -10             7       3.02621             0         0.001             0          2          0          0          0          0          0          0          0  #  SizeSpline_Val_4_LL_ALL1(3)
+           -10             7      0.964964             0         0.001             0          2          0          0          0          0          0          0          0  #  SizeSpline_Val_5_LL_ALL1(3)
+
 # 7   PL_JP_3 LenSelex
 # 8   PS_ALL3 LenSelex
 # 9   LL_ALL3 LenSelex

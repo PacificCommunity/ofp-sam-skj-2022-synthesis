@@ -557,7 +557,7 @@
            -10             7      -2.75358             0         0.001             0          2          0          0          0          0          0          0          0  #  SizeSpline_Val_4_PS_ALL1(2)
            -10             7      -4.45437             0         0.001             0          2          0          0          0          0          0          0          0  #  SizeSpline_Val_5_PS_ALL1(2)
 # 3   LL_ALL1 LenSelex
-             0             0             0             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Code_LL_ALL1(3)
+             0             0             2             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Code_LL_ALL1(3)
         -0.001             1     0.0329702            -1         0.001             1          3          0          0          0          0          0          0          0  #  SizeSpline_GradLo_LL_ALL1(3)
             -1          0.02          0.02          0.02         0.001             1         -3          0          0          0          0          0          0          0  #  SizeSpline_GradHi_LL_ALL1(3)
             13           200        23.125             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Knot_1_LL_ALL1(3)
@@ -573,7 +573,7 @@
 # 4   PL_ALL2 LenSelex
 # 5   PS_ALL2 LenSelex
 # 6   LL_ALL2 LenSelex
-             0             0             0             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Code_LL_ALL1(3)
+             0             0             2             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Code_LL_ALL1(3)
         -0.001             1     0.0329702            -1         0.001             1          3          0          0          0          0          0          0          0  #  SizeSpline_GradLo_LL_ALL1(3)
             -1          0.02          0.02          0.02         0.001             1         -3          0          0          0          0          0          0          0  #  SizeSpline_GradHi_LL_ALL1(3)
             13           200        23.125             0             0             0        -99          0          0          0          0          0          0          0  #  SizeSpline_Knot_1_LL_ALL1(3)
